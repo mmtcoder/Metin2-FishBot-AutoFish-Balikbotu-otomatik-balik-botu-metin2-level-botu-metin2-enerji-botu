@@ -16,6 +16,11 @@
 > **800x600 pencere modunda oynanmalı** ve **Ekranın yeri asla kıpırdatılmamalı**
 
 
+> [!NOTE]
+> Eğer karakter birileri ile yazışmış ise **ChatResources/ChatQuestionAnswer/ChatQuestAnswer.txt** ve  ChatResources/ChatQuestionAnswer/REcordWhisperChat.txt dosyasından inceleyebilir
+> ve çekilen screen shot dosyalarını **ScreenShot** dosyasından inceleyebilirsin.
+
+
 
 ## PROGRAMIN ÇALIŞTIRILMASI
 * Programı zip halden istediğiniz yere kurdukran sonra. Bin/Debug içerisindeki **Metin2AutoFishCSharp.exe dosyasını Yönetici olarak çalıştırın**
