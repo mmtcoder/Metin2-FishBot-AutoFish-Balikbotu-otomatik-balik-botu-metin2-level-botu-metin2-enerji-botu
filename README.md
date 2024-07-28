@@ -12,6 +12,11 @@
 > Eğer program işinize yarayıp destekte bulunmak isterseniz gerekli bilgiler **Haberleşme ve Diğer** kısmında görebilirsin :+1:.
 
 
+> [!WARNING]
+> **800x600 pencere modunda oynanmalı** ve **Ekranın yeri asla kıpırdatılmamalı**
+
+
+
 ## PROGRAMIN ÇALIŞTIRILMASI
 * Programı zip halden istediğiniz yere kurdukran sonra. Bin/Debug içerisindeki **Metin2AutoFishCSharp.exe dosyasını Yönetici olarak çalıştırın**
 
@@ -80,3 +85,11 @@ Bilgisayarınızda aktif kullandığınız başka programlar yok ise sadece 2 Gh
 - Gönderdikten sonra **Test Et** Butonuna basın.
 - Ardından size *** kullanıcı size mi ait diye soracak evete bastıktan sonra bağlantı kurulur.
 - **DURDUR** mesajı gönderdiğinizde aktif olan botu durdurur.
+
+# BALIK BOTU NASIL ÇALIŞTIRILMALI
+
+![2](https://github.com/user-attachments/assets/f294a782-112a-4f13-8cf6-e7c4abbae34a)
+
+* **Ekranın yeri hiç kıpırdamamalı** ve **800x600** pencere modunda oynanmalı
+* Resimdeki gibi balıkçı sizin arkanızda olmalı ve karakter kuş bakışında olmalı
+* Haritalar veya herhangi karakterin chat veya isim kısmını kapatacak şeyler olmamalı
