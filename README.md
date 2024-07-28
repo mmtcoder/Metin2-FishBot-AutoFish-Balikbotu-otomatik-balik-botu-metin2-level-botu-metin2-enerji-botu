@@ -32,7 +32,7 @@ En az 2.80 Ghz işlemci(Altı olsada tutar ama balık tutma sayısı işlemci h�
 Bilgisayarınızda aktif kullandığınız başka programlar yok ise sadece 2 Ghz Ram yeterli olacaktır.
 İşletim sistemi Windows 8, Windows 10 ve Windows 11 DESTEKLER...
 
-## PROGRAMIN YAPABİLDİKLERİ
+# PROGRAMIN YAPABİLDİKLERİ
 
 ## FISHING BÖLÜMÜ
 
