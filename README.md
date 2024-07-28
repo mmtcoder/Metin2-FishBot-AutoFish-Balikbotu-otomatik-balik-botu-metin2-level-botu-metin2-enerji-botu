@@ -5,7 +5,7 @@
 **Sadece 1 oyun hesabını destekler**. Program görüntü ekran kaydı alma mantığıyla yapılmıştır ve alınan görüntü işlenerek gerekli işlemler yapılmıştır. **Yani gerçek kişi balık tutuyormuş gibi program çalışır ve onun haricinde bilgisayarın başka bir program çalıştırması yada program açık iken sizin başka işlem yapmanız mümkün OLMAZ**.
 
 > [!CAUTION]
-> Makro Kullanmak Ban Sebebidir.
+> Makro Kullanmak **Ban** Sebebidir.Eğitim amaçlı yazılmıştır ve herhangi sorumluluk **Kabul edilmemektedir**
 
 
 > [!TIP]
@@ -91,5 +91,5 @@ Bilgisayarınızda aktif kullandığınız başka programlar yok ise sadece 2 Gh
 ![2](https://github.com/user-attachments/assets/f294a782-112a-4f13-8cf6-e7c4abbae34a)
 
 * **Ekranın yeri hiç kıpırdamamalı** ve **800x600** pencere modunda oynanmalı
-* Resimdeki gibi balıkçı sizin arkanızda olmalı ve karakter kuş bakışında olmalı
+* Balıkçı karakterin hemen **arka kısımında** olmalı. Yani karakter geriye doğru gittiği zaman **mutlaka** karakterin kamera açısından balıkçı **görülmeli**
 * Haritalar veya herhangi karakterin chat veya isim kısmını kapatacak şeyler olmamalı
