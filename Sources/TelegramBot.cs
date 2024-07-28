@@ -19,9 +19,7 @@ namespace Metin2AutoFishCSharp.Sources
     internal class TelegramBot
     {
 
-        private readonly string telegramToken = "Fill your token";
-        //and you can change your telegram bot account username from
-        //MainForm Designer "Haberlesme ve Diger" section
+        private readonly string telegramToken = "7460110010:AAEN4uj5bXfnRogkepLPusqHLe13KI1tInk";
 
         public static Message TELEGRAM_SEND_MESSAGE = null;
 

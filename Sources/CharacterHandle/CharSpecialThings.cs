@@ -395,12 +395,13 @@ namespace MusicPlayerApp.Sources.CharacterHandle
             int[] currentTrade = screenshot.ImageArraySpecifiedArea(
                 coor.RectTradeDetectionArea());
 
-            TelegramBot.SendMessageTelegram("Birisi sana ticaret attı ve ScreenShot dosyasına görüntü kaydedildi");
+           
             
             if (imageObject.CompareTwoArrayAdvanced(imageObject.arrayTradeIcon,currentTrade,
                 ImageSensibilityLevel.SENSIBILTY_HIGH))
             {
                 ThreadGlobals.isTradePanelActive = true;
+                TelegramBot.SendMessageTelegram("Birisi sana ticaret attı ve ScreenShot dosyasına görüntü kaydedildi");
                 return true;
             }
             ThreadGlobals.isTradePanelActive = false;
