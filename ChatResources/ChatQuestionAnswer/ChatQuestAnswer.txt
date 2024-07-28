@@ -1,0 +1,163 @@
+&
+balık botu
+botmusun
+bot kullanıyor
+botcu
+hileci
+hile misin
+hilemisin
+hile kullanıyor
+sen hilesin
+hilesin
+program
+bot musun
+^
+ben bot değilim
+ben hile değilim
+öyle mi
+&
+fısıltı
+fısıltı kapalı
+mesajın kapalı
+^
+sanane
+sonuç olarak oyun böyle bir seçenek koymuş bende kullandım
+canım öyle istedi
+&
+kolay gelsin
+kolay gel
+kg
+k g
+k gelsin
+^
+eyvallah sağol
+sağol sanada
+sanada
+eyvallah reis
+&
+sa
+s aley
+s aleyküm
+selam
+merhaba
+hello
+hi
+^
+as
+a selam
+selam
+&
+nasılsın
+nasıl gidiyor
+nbr
+^
+sağol
+iyiyim sağol
+tşk iyiyim
+&
+hareketlerin tuhaf
+duruşun saçma
+nasıl balık tutuyorsun
+^
+gayet normal tutuyorum
+sana öyle geliyor
+ben herhangi bir şey göremiyorum
+&
+sıkılmadın mı
+çok sıkıcı
+sıkıcı değil mi
+^
+uzun zamandan sonra alıştım
+durmak yok yola devam
+sıkıcı değil
+sıkılmadım
+&
+iyi oyunlar
+rastgele
+rast gele
+iyi çalışmalar
+^
+sanada
+sağolasın sanada
+tşk sağol
+&
+emin misin
+eminmisin
+^
+eminim son kararım
+evet son kararım
+evet
+tabiki eminim
+&
+event başladımı
+balık başladımı
+balık eventi başladımı
+event varmı
+balık varmı
+event var mı
+^
+bilmiyorum ben sadece balık tutuyorum
+ben balık eventi yapmıyorum bu yüzden bilmiyorum
+bilmiyorum
+bilmem ben event yapmıyorum
+&
+bu kadar hızlı balık tutuyorsun
+seri balık tutuyorsun
+seri balık tutuyorsun
+^
+elin alışırsa sende tutabilirsin
+uzun zamandan beri balık tutuyorum normaldir
+elim alıştı normal
+&
+farklı chlerde görüyorum
+farklı ch lerde görüyorum
+kanal değiştiriyorsun
+^
+belli süre tuttuktan sonra dinlenip tekrar oyuna giriyorum ch ye bakmıyorum elbet
+oyundan çıkıp sonra tekrar giriyorum chyi mi hatırlayacağım
+metin2 kapatıp sonra tekrar giriyorum chlere dikkat etmiyorum
+&
+balık tutarken nasıl yazı yazıyorsun
+böyle nasıl yazı yazıyorsun
+balık tutarken cevap yazıyorsun
+^
+enter tuşuna bas sonra yazmak istediklerine tekrar enter bas bitti
+istediğim balık gelmediği için sana enter tuşuna basarak cevap veriyorum
+insan yerine koyup sana cevap veriyoruz sen hala saçmalıyorsun ayıp
+&
+oradamısın
+orda mısın
+orada mısın
+^
+evet buradayım
+burdayım balık tutuyorum
+gördüğün gibi buradayım
+&
+yabbie bol olsun
+yabbie bol sun
+yabbie bololsun
+bol yabbieler
+^
+sağolasın
+çok sağolasın
+eyvallah sağolasın
+&
+balık nasıl
+balıklar nasıl
+balıkların iyi mi
+^
+idare ediyoruz işte yavaş yavaş
+tuttuğumuz kadar reis önemli değil
+olduğu kadar
+&
+yabbie satıyon mu
+yabbie var mı
+yabbie varmı
+yabbie satıyormusun
+yabbie satıyonmu
+altın sudak varmı
+altın sudak satıyor musun
+^
+şimdi satmıyorum sonra satacağım
+sonra satacağım
+biriktirince satacağım şimdi değil
