@@ -8,6 +8,14 @@ Metin2 otomatik balık tutma botu otomatik kasılma enerji parçası. (Metin2 Au
 > [!CAUTION]
 > Makro Kullanmak Ban Sebebidir.
 
+
+> [!TIP]
+> Eğer program işinize yarayıp destekte bulunmak isterseniz gerekli bilgiler **Haberleşme ve Diğer** kısmında görebilirsin :+1:.
+
+
+## PROGRAMIN ÇALIŞTIRILMASI
+* Programı zip halden istediğiniz yere kurdukran sonra. Bin/Debug içerisindeki **Metin2AutoFishCSharp.exe dosyasını Yönetici olarak çalıştırın**
+
 ## PROGRAMI TEST ETMENİZ İÇİN BİLGİSAYARDA OLMASI GEREKEN İDEAL ÖZELLİKLER
 
 En az 2.80 Ghz işlemci(Altı olsada tutar ama balık tutma sayısı işlemci hızına göre çok değişkenlik gösterir..)
