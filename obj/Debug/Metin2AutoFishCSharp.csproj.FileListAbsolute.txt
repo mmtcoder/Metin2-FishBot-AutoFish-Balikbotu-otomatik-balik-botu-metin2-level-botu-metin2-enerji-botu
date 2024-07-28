@@ -1,0 +1,14 @@
+D:\CSharpMetin2AutoFishing\Metin2AutoFishCSharp\Metin2AutoFishCSharp\bin\Debug\Metin2AutoFishCSharp.exe.config
+D:\CSharpMetin2AutoFishing\Metin2AutoFishCSharp\Metin2AutoFishCSharp\bin\Debug\Metin2AutoFishCSharp.exe
+D:\CSharpMetin2AutoFishing\Metin2AutoFishCSharp\Metin2AutoFishCSharp\bin\Debug\Metin2AutoFishCSharp.pdb
+D:\CSharpMetin2AutoFishing\Metin2AutoFishCSharp\Metin2AutoFishCSharp\obj\Debug\Metin2AutoFishCSharp.csproj.AssemblyReference.cache
+D:\CSharpMetin2AutoFishing\Metin2AutoFishCSharp\Metin2AutoFishCSharp\obj\Debug\Metin2AutoFishCSharp.FullScreen.resources
+D:\CSharpMetin2AutoFishing\Metin2AutoFishCSharp\Metin2AutoFishCSharp\obj\Debug\Metin2AutoFishCSharp.MainForm.resources
+D:\CSharpMetin2AutoFishing\Metin2AutoFishCSharp\Metin2AutoFishCSharp\obj\Debug\Metin2AutoFishCSharp.Properties.Resources.resources
+D:\CSharpMetin2AutoFishing\Metin2AutoFishCSharp\Metin2AutoFishCSharp\obj\Debug\Metin2AutoFishCSharp.csproj.GenerateResource.cache
+D:\CSharpMetin2AutoFishing\Metin2AutoFishCSharp\Metin2AutoFishCSharp\obj\Debug\Metin2AutoFishCSharp.csproj.CoreCompileInputs.cache
+D:\CSharpMetin2AutoFishing\Metin2AutoFishCSharp\Metin2AutoFishCSharp\obj\Debug\Metin2AutoFishCSharp.exe
+D:\CSharpMetin2AutoFishing\Metin2AutoFishCSharp\Metin2AutoFishCSharp\obj\Debug\Metin2AutoFishCSharp.pdb
+D:\CSharpMetin2AutoFishing\Metin2AutoFishCSharp\Metin2AutoFishCSharp\bin\Debug\WindowsInput.dll
+D:\CSharpMetin2AutoFishing\Metin2AutoFishCSharp\Metin2AutoFishCSharp\bin\Debug\WindowsInput.xml
+D:\CSharpMetin2AutoFishing\Metin2AutoFishCSharp\Metin2AutoFishCSharp\obj\Debug\Metin2Au.2BB87EE4.Up2Date
