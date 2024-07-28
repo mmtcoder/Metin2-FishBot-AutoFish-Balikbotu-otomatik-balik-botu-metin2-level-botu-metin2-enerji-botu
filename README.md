@@ -18,7 +18,7 @@
 
 > [!NOTE]
 > Eğer karakter birileri ile yazışmış ise **ChatResources/ChatQuestionAnswer/ChatQuestAnswer.txt** ve
-> **ChatResources/ChatQuestionAnswer/REcordWhisperChat.txt** dosyasından inceleyebilir
+> **ChatResources/ChatQuestionAnswer/RecordWhisperChat.txt** dosyasından inceleyebilir
 > ve çekilen screen shot dosyalarını **ScreenShot** dosyasından inceleyebilirsin.
 
 
