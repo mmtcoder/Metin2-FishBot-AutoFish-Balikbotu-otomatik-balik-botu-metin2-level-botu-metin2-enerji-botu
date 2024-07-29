@@ -49,6 +49,7 @@ Bilgisayarınızda aktif kullandığınız başka programlar yok ise sadece 2 Gh
 - Oyundan atıldığı zaman heseba otomatik girme(gameforge simgesi sadece görev çubuğunda olmalı ve sadece balık tutan hesabın açık olması gerekir.)
 - Fısıltı ve Chatte yazılan yazı tespit edip ona göre cevap verme
 - Zamanlayıcı seçeneği ile belirli dakikalarda balık tutma ara verme ve tamamen durdurma
+- Ara verdiğinde rastgele olarak ya karakter atıp bekler yada çıkış atıp bekler
 
  ### ZAMANLAYICILARIN DEĞER ATANMASI
 
