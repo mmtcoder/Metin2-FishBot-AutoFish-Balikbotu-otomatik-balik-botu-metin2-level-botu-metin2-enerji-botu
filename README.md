@@ -26,7 +26,7 @@
 
 
 ## PROGRAMIN ÇALIŞTIRILMASI
-* Programı zip halden istediğiniz yere kurdukran sonra. Bin/Debug içerisindeki **Metin2AutoFishCSharp.exe dosyasını Yönetici olarak çalıştırın**
+* Programı zip halden çıkartıp istediğiniz yere kurdukran sonra. Bin/Debug içerisindeki **Metin2AutoFishCSharp.exe dosyasını Yönetici olarak çalıştırın**
 
 ## PROGRAMI TEST ETMENİZ İÇİN BİLGİSAYARDA OLMASI GEREKEN İDEAL ÖZELLİKLER
 
