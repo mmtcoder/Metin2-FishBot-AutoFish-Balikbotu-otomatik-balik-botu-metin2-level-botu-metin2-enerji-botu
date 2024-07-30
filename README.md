@@ -62,7 +62,7 @@ Bilgisayarınızda aktif kullandığınız başka programlar yok ise sadece 2 Gh
   ### 'Check Chat' Butonu Hakkında
 
   - Butona basıldığında "Tespit Edilecek Kelimeler" ve "Edilen Tespite Göre Verilecek Cevaplar" kısmı en altta da kayıtlı olanları gösteren dialog var
-  - Ekleme yaparken birden fazla kelime eklerken mutlaka "," (virgül) işareti ila ayırmalısınız
+  - Ekleme yaparken birden fazla kelime eklerken mutlaka "," (virgül) işareti ile ayırmalısınız
   - İki yeride doldurduktan sonra " verileri yükle " butonuna basınız.
   - Örneğin üst kısma = " **ne yapıyorsun,ne yaptın,ne yaparsın** " verilecek cevap kısmına ise "**iyidir senden ne haber,iyiyim balık tutuyorum,sağol çalışıyorum** " gibi yükleme yapabilirsin.
 
