@@ -46,7 +46,9 @@ namespace MusicPlayerApp.Sources
         public static volatile bool isAltinSudakSelected = true;
         public static volatile bool isPalamutSelected = true;
         public static volatile bool isKurbagaSelected = false;
+        public static volatile bool isKadifeSelected = false;
         public static volatile bool isHepsiSelected = false;
+        public static volatile bool isDenizkizSelected = false;
 
         public static volatile bool isPrepareFishingStarted = false;
 
@@ -56,6 +58,7 @@ namespace MusicPlayerApp.Sources
 
         public static volatile bool isChattingAnswerActive = false;
         public static volatile bool isWhisperAnswerActive = false;
+        public static volatile bool isAdaptableFishing = false;
 
         /*************    ABOUT LEVEL AND FARM    ***********/
         public static volatile bool isLevelFarmStopped = true;
@@ -75,6 +78,7 @@ namespace MusicPlayerApp.Sources
 
         public static bool isTelegramBotActive = false;
 
+        
 
         public static void DebugThreadGloablValues()
         {
@@ -161,6 +165,8 @@ namespace MusicPlayerApp.Sources
             isAltinSudakSelected = true;
             isPalamutSelected = true;
             isKurbagaSelected = false;
+            isKadifeSelected = false;
+            isDenizkizSelected = false;
             isHepsiSelected = false;
 
             IsThreadOneActive = false;

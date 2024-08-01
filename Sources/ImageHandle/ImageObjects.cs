@@ -35,6 +35,8 @@ namespace MusicPlayerApp.Sources.ImageHandle
         public int[] arrayYabbieIcon { get; private set; }
         public int[] arrayAltinSudakIcon { get; private set; }
         public int[] arrayPalamutIcon { get; private set; }
+        public int[] arrayKurbagaIcon { get; private set; }
+        public int[] arrayKadifeIcon { get; private set; }
         public int[] arrayFisherWords { get; private set; }
         public int[] arrayKampAtesiWords { get; private set; }
         public int[] arrayGameForgeOyna {  get; private set; }
@@ -75,6 +77,8 @@ namespace MusicPlayerApp.Sources.ImageHandle
         public int[] arrayPinkAltinSudak { get; private set; }
         public int[] arrayPinkPalamut { get; private set; }
         public int[] arrayPinkKurbaga { get; private set; }
+        public int[] arrayPinkKadife { get; private set; }
+        public int[] arrayPinkDenizkiz { get; private set; }
         public int[] arrayPinkTon { get; private set; }
         public int[] arrayPinkYerYok { get; private set; }
         public int[] arrayPinkExitChat { get; private set; }
@@ -147,6 +151,8 @@ namespace MusicPlayerApp.Sources.ImageHandle
             arrayYabbieIcon = convertBitMapToIntArray(ImagePathNames.yabbieIconFileName, PathWayStruct.PATH_FISHES);
             arrayAltinSudakIcon = convertBitMapToIntArray(ImagePathNames.altinSudakIconFileName, PathWayStruct.PATH_FISHES);
             arrayPalamutIcon = convertBitMapToIntArray(ImagePathNames.palamutIconFileName, PathWayStruct.PATH_FISHES);
+            arrayKurbagaIcon = convertBitMapToIntArray(ImagePathNames.kurbagaIconFileName, PathWayStruct.PATH_FISHES);
+            arrayKadifeIcon = convertBitMapToIntArray(ImagePathNames.kadifeIconFileName, PathWayStruct.PATH_FISHES);
 
             //@@@@@@@@@@@@@@@@@@@@  ONE COLOR ARRAYS  @@@@@@@@@@@@@@@@@@@@@@@
 
@@ -158,6 +164,10 @@ namespace MusicPlayerApp.Sources.ImageHandle
                 convertBitMapToIntArray(ImagePathNames.palamutChatFileName, PathWayStruct.PATH_FISHES));
             arrayPinkKurbaga = RecordWantedColorIntArray(ColorGame.CHAT_PINK_COLOR,
                 convertBitMapToIntArray(ImagePathNames.kurbagaChatFileName, PathWayStruct.PATH_FISHES));
+            arrayPinkKadife = RecordWantedColorIntArray(ColorGame.CHAT_PINK_COLOR,
+                convertBitMapToIntArray(ImagePathNames.kadifeChatFileName, PathWayStruct.PATH_FISHES));
+            arrayPinkDenizkiz = RecordWantedColorIntArray(ColorGame.CHAT_PINK_COLOR,
+                convertBitMapToIntArray(ImagePathNames.denizkızChatFileName, PathWayStruct.PATH_FISHES));
             arrayPinkTon = RecordWantedColorIntArray(ColorGame.CHAT_PINK_COLOR,
                 convertBitMapToIntArray(ImagePathNames.altinTonChatFileName, PathWayStruct.PATH_FISHES));
             arrayPinkYerYok = RecordWantedColorIntArray(ColorGame.CHAT_PINK_COLOR,

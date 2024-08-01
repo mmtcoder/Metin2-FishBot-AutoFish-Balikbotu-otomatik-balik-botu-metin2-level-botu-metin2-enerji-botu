@@ -117,14 +117,22 @@ namespace MusicPlayerApp.Sources
         public static void SleepRandomForPlayers(int minValue, int maxValue,
             int minValuePlayers,int maxValuePlayers)
         {
-            if(ThreadGlobals.isAnotherPlayerDetected)
+            if(ThreadGlobals.isAdaptableFishing)
             {
-                Thread.Sleep(MakeRandomValue(minValuePlayers, maxValuePlayers));
+                if (ThreadGlobals.isAnotherPlayerDetected)
+                {
+                    Thread.Sleep(MakeRandomValue(minValuePlayers, maxValuePlayers));
+                }
+                else
+                {
+                    Thread.Sleep(MakeRandomValue(minValue, maxValue));
+                }
             }
             else
             {
                 Thread.Sleep(MakeRandomValue(minValue, maxValue));
             }
+           
         }
 
         public static void SleepRandomMinute(int minValue,int maxValue)

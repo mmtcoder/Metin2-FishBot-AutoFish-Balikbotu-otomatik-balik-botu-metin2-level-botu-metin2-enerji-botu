@@ -34,6 +34,8 @@ namespace MusicPlayerApp.Sources.ImageHandle
         public static readonly string altinSudakIconFileName = "altinSudakIcon.png";
         public static readonly string palamutIconFileName = "palamutIcon.png";
         public static readonly string yabbieIconFileName = "yabbieIcon.png";
+        public static readonly string kurbagaIconFileName = "kurbagaIcon.png";
+        public static readonly string kadifeIconFileName = "kadifeIcon.png";
         public static readonly string gameForgeOynaFileName = "gameForgeOyna.png";
         public static readonly string gForgeAppIconFileName = "gForgeAppIcon.png";
         public static readonly string gForgeOynaDownFileName = "gForgeOynaDown.png";
@@ -77,10 +79,11 @@ namespace MusicPlayerApp.Sources.ImageHandle
         public static readonly string cannotFishChatFileName = "cannotFishChat.png";
         public static readonly string exitChatFileName = "exitChat.png";
         public static readonly string kurbagaChatFileName = "kurbagaChat.png";
+        public static readonly string kadifeChatFileName = "kadifeChat.png";
+        public static readonly string denizkızChatFileName = "denizChat.png";
         public static readonly string palamutChatFileName = "palamutChat.png";
         public static readonly string yabbieChatFileName = "yabbieChat.png";
         public static readonly string yeryokChatFileName = "yeryok.png";
-
         public static readonly string fisherGreenFileName = "fisherGreen.png";
         public static readonly string kampAtesiGreenFileName = "kampAtesiGreen.png";
     }

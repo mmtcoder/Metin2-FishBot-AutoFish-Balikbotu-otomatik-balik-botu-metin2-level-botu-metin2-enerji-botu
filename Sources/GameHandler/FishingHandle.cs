@@ -713,8 +713,14 @@ namespace MusicPlayerApp.Sources.GameHandler
             {
                 if (gameImages.compareTwoArrayQuickly(gameImages.arrayPinkKurbaga, targetPinkChat)) return true;
             }
-            
-
+            if (ThreadGlobals.isKadifeSelected)
+            {
+                if (gameImages.compareTwoArrayQuickly(gameImages.arrayPinkKadife, targetPinkChat)) return true;
+            }
+            if (ThreadGlobals.isDenizkizSelected)
+            {
+                if (gameImages.compareTwoArrayQuickly(gameImages.arrayPinkDenizkiz, targetPinkChat)) return true;
+            }
             return false;
         }
     }

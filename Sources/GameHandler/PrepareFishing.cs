@@ -741,7 +741,7 @@ namespace MusicPlayerApp.Sources.GameHandler
         }
         private int[][] GetFishTypesForGrilling()
         {
-            int[][] fishTypes = new int[4][];
+            int[][] fishTypes = new int[5][];
 
             if(ThreadGlobals.isYabbieSelected) 
             {
@@ -757,7 +757,11 @@ namespace MusicPlayerApp.Sources.GameHandler
             }
             if(ThreadGlobals.isKurbagaSelected)
             {
-                //Kurbaganin fotografi yok
+                fishTypes[3] = imageObjects.arrayKurbagaIcon;
+            }
+            if (ThreadGlobals.isKadifeSelected)
+            {
+                fishTypes[4] = imageObjects.arrayKadifeIcon;
             }
             return fishTypes;
         }
