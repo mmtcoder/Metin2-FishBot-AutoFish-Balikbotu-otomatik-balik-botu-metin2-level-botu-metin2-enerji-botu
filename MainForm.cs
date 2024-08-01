@@ -66,6 +66,7 @@ namespace MusicPlayerApp
             Thread.CurrentThread.Name = "Main Thread";
             DebugPfCnsl.println( "MainForm constructor is called");
             DebugPfCnsl.println(Thread.CurrentThread.Name);
+            InitializeToolTip();
             pictureBox = pictureBoxMainForm;
             labelCopyStartStatus = labelStartStatus;
             labelCopyLevelFarmStatus = labelLevelFarmStatus;
@@ -471,6 +472,22 @@ namespace MusicPlayerApp
             {
                 ThreadGlobals.isKurbagaSelected = false;
             }
+            if (checkBoxKadife.Checked)
+            {
+                ThreadGlobals.isKadifeSelected = true;
+            }
+            else
+            {
+                ThreadGlobals.isKadifeSelected = false;
+            }
+            if (checkBoxDeniz.Checked)
+            {
+                ThreadGlobals.isDenizkizSelected = true;
+            }
+            else
+            {
+                ThreadGlobals.isDenizkizSelected = false;
+            }
         }
 
         private void checkBoxsHepsi_Click(object sender, EventArgs e)
@@ -484,10 +501,12 @@ namespace MusicPlayerApp
                 checkBoxAltinSudak.Checked = false;
                 checkBoxPalamut.Checked = false;
                 checkBoxKurbaga.Checked = false;
+                checkBoxKadife.Checked = false;
 
                 checkBoxYabbie.Enabled = false;
                 checkBoxAltinSudak.Enabled = false;
                 checkBoxKurbaga.Enabled = false;
+                checkBoxKadife.Enabled = false;
                 checkBoxPalamut.Enabled = false;
             }
             else
@@ -497,17 +516,23 @@ namespace MusicPlayerApp
                 checkBoxYabbie.Enabled = true;
                 checkBoxPalamut.Enabled = true;
                 checkBoxKurbaga.Enabled = true;
+                checkBoxDeniz.Enabled = true;
+                checkBoxKadife.Enabled = true;
                 checkBoxAltinSudak.Enabled = true;
 
                 checkBoxYabbie.Checked = true;
                 checkBoxAltinSudak.Checked = true;
                 checkBoxPalamut.Checked = true;
                 checkBoxKurbaga.Checked = false;
+                checkBoxDeniz.Checked = false;
+                checkBoxKadife.Checked = false;
 
                 ThreadGlobals.isYabbieSelected = true;
                 ThreadGlobals.isAltinSudakSelected = true;
                 ThreadGlobals.isPalamutSelected = true;
                 ThreadGlobals.isKurbagaSelected = false;
+                ThreadGlobals.isDenizkizSelected = false;
+                ThreadGlobals.isKadifeSelected = false;
 
             }
         }
@@ -902,9 +927,26 @@ namespace MusicPlayerApp
             }
         }
 
+        private void InitializeToolTip()
+        {
+            toolTip.SetToolTip(checkBoxAdaptableFish, "Eğer haritada veya yakınınızda oyuncu var ise yavaş balık tutar");
+        }
+
         private void checkBoxEnableTime_CheckedChanged_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void checkBoxAdaptable_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBoxAdaptableFish.Checked)
+            {
+                ThreadGlobals.isAdaptableFishing = true;
+            }
+            else
+            {
+                ThreadGlobals.isAdaptableFishing = false;
+            }
         }
     }
 }

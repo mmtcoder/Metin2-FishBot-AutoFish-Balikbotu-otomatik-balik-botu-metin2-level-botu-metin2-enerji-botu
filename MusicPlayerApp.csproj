@@ -15,6 +15,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
     <PublishUrl>C:\Users\Herkes\Desktop\cSharpTest\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -64,13 +65,17 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
     <TargetZone>LocalIntranet</TargetZone>
   </PropertyGroup>
   <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -175,6 +180,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Metin2AutoFishCSharp_TemporaryKey.pfx" />
     <None Include="packages.config" />
@@ -192,21 +198,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ChatResources\GameAlphabets\" />
-    <Folder Include="Fishes\" />
-    <Folder Include="Images\" />
-    <Folder Include="ScreenShot\" />
     <Folder Include="TestImages\" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 ve x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
       <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <ProductName>.NET Framework 3.5 SP1 </ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
@@ -214,6 +216,164 @@
     <Content Include="ChatResources\ChatQuestionAnswer\ChatQuestAnswer.txt" />
     <Content Include="ChatResources\ChatQuestionAnswer\RecordChats.txt" />
     <Content Include="ChatResources\ChatQuestionAnswer\RecordWhisperChat.txt" />
+    <Content Include="ChatResources\GameAlphabets\0.png" />
+    <Content Include="ChatResources\GameAlphabets\00.png" />
+    <Content Include="ChatResources\GameAlphabets\1.png" />
+    <Content Include="ChatResources\GameAlphabets\11.png" />
+    <Content Include="ChatResources\GameAlphabets\2.png" />
+    <Content Include="ChatResources\GameAlphabets\22.png" />
+    <Content Include="ChatResources\GameAlphabets\3.png" />
+    <Content Include="ChatResources\GameAlphabets\33.png" />
+    <Content Include="ChatResources\GameAlphabets\4.png" />
+    <Content Include="ChatResources\GameAlphabets\44.png" />
+    <Content Include="ChatResources\GameAlphabets\5.png" />
+    <Content Include="ChatResources\GameAlphabets\55.png" />
+    <Content Include="ChatResources\GameAlphabets\6.png" />
+    <Content Include="ChatResources\GameAlphabets\66.png" />
+    <Content Include="ChatResources\GameAlphabets\7.png" />
+    <Content Include="ChatResources\GameAlphabets\77.png" />
+    <Content Include="ChatResources\GameAlphabets\8.png" />
+    <Content Include="ChatResources\GameAlphabets\88.png" />
+    <Content Include="ChatResources\GameAlphabets\9.png" />
+    <Content Include="ChatResources\GameAlphabets\99.png" />
+    <Content Include="ChatResources\GameAlphabets\a.png" />
+    <Content Include="ChatResources\GameAlphabets\aa.png" />
+    <Content Include="ChatResources\GameAlphabets\b.png" />
+    <Content Include="ChatResources\GameAlphabets\bb.png" />
+    <Content Include="ChatResources\GameAlphabets\c.png" />
+    <Content Include="ChatResources\GameAlphabets\cc.png" />
+    <Content Include="ChatResources\GameAlphabets\cT1.png" />
+    <Content Include="ChatResources\GameAlphabets\cT2.png" />
+    <Content Include="ChatResources\GameAlphabets\d.png" />
+    <Content Include="ChatResources\GameAlphabets\dd.png" />
+    <Content Include="ChatResources\GameAlphabets\e.png" />
+    <Content Include="ChatResources\GameAlphabets\ee.png" />
+    <Content Include="ChatResources\GameAlphabets\f.png" />
+    <Content Include="ChatResources\GameAlphabets\ff.png" />
+    <Content Include="ChatResources\GameAlphabets\g.png" />
+    <Content Include="ChatResources\GameAlphabets\gg.png" />
+    <Content Include="ChatResources\GameAlphabets\gT1.png" />
+    <Content Include="ChatResources\GameAlphabets\gT2.png" />
+    <Content Include="ChatResources\GameAlphabets\h.png" />
+    <Content Include="ChatResources\GameAlphabets\hh.png" />
+    <Content Include="ChatResources\GameAlphabets\i.png" />
+    <Content Include="ChatResources\GameAlphabets\ii.png" />
+    <Content Include="ChatResources\GameAlphabets\iT1.png" />
+    <Content Include="ChatResources\GameAlphabets\iT2.png" />
+    <Content Include="ChatResources\GameAlphabets\j.png" />
+    <Content Include="ChatResources\GameAlphabets\jj.png" />
+    <Content Include="ChatResources\GameAlphabets\k.png" />
+    <Content Include="ChatResources\GameAlphabets\kk.png" />
+    <Content Include="ChatResources\GameAlphabets\l.png" />
+    <Content Include="ChatResources\GameAlphabets\ll.png" />
+    <Content Include="ChatResources\GameAlphabets\m.png" />
+    <Content Include="ChatResources\GameAlphabets\mm.png" />
+    <Content Include="ChatResources\GameAlphabets\n.png" />
+    <Content Include="ChatResources\GameAlphabets\nn.png" />
+    <Content Include="ChatResources\GameAlphabets\o.png" />
+    <Content Include="ChatResources\GameAlphabets\oo.png" />
+    <Content Include="ChatResources\GameAlphabets\oT1.png" />
+    <Content Include="ChatResources\GameAlphabets\oT2.png" />
+    <Content Include="ChatResources\GameAlphabets\p.png" />
+    <Content Include="ChatResources\GameAlphabets\pp.png" />
+    <Content Include="ChatResources\GameAlphabets\q.png" />
+    <Content Include="ChatResources\GameAlphabets\qq.png" />
+    <Content Include="ChatResources\GameAlphabets\r.png" />
+    <Content Include="ChatResources\GameAlphabets\rr.png" />
+    <Content Include="ChatResources\GameAlphabets\s.png" />
+    <Content Include="ChatResources\GameAlphabets\ss.png" />
+    <Content Include="ChatResources\GameAlphabets\sT1.png" />
+    <Content Include="ChatResources\GameAlphabets\sT2.png" />
+    <Content Include="ChatResources\GameAlphabets\t.png" />
+    <Content Include="ChatResources\GameAlphabets\tt.png" />
+    <Content Include="ChatResources\GameAlphabets\u.png" />
+    <Content Include="ChatResources\GameAlphabets\uu.png" />
+    <Content Include="ChatResources\GameAlphabets\uuT1.png" />
+    <Content Include="ChatResources\GameAlphabets\uuT2.png" />
+    <Content Include="ChatResources\GameAlphabets\v.png" />
+    <Content Include="ChatResources\GameAlphabets\vv.png" />
+    <Content Include="ChatResources\GameAlphabets\w.png" />
+    <Content Include="ChatResources\GameAlphabets\ww.png" />
+    <Content Include="ChatResources\GameAlphabets\x.png" />
+    <Content Include="ChatResources\GameAlphabets\xx.png" />
+    <Content Include="ChatResources\GameAlphabets\y.png" />
+    <Content Include="Fishes\altinSudakChat.png" />
+    <Content Include="Fishes\altinSudakIcon.png" />
+    <Content Include="Fishes\altinTon.png" />
+    <Content Include="Fishes\cannotFishChat.png" />
+    <Content Include="Fishes\exitChat.png" />
+    <Content Include="Fishes\HamsiIcon.png" />
+    <Content Include="Fishes\kadifeChat.png" />
+    <Content Include="Fishes\kadifeIcon.png" />
+    <Content Include="Fishes\kralYengeci.png" />
+    <Content Include="Fishes\kurbagaChat.png" />
+    <Content Include="Fishes\kurbagaIcon.png" />
+    <Content Include="Fishes\palamutChat.png" />
+    <Content Include="Fishes\palamutIcon.png" />
+    <Content Include="Fishes\yabbieChat.png" />
+    <Content Include="Fishes\yabbieIcon.png" />
+    <Content Include="Fishes\yeryok.png" />
+    <Content Include="Fishes\ZarganaIcon.png" />
+    <Content Include="Images\200.png" />
+    <Content Include="Images\balikciAraEkran.png" />
+    <Content Include="Images\bluePotB.png" />
+    <Content Include="Images\bluePotK.png" />
+    <Content Include="Images\bluePotO.png" />
+    <Content Include="Images\bluePotXxl.png" />
+    <Content Include="Images\charButton.png" />
+    <Content Include="Images\charScreen.png" />
+    <Content Include="Images\chatActive.png" />
+    <Content Include="Images\dieScreen.png" />
+    <Content Include="Images\emptyBar.png" />
+    <Content Include="Images\emptySlot.png" />
+    <Content Include="Images\entryScreen.png" />
+    <Content Include="Images\firstSkillSlotEmpty.png" />
+    <Content Include="Images\fisherGreen.png" />
+    <Content Include="Images\fisherShopPage.png" />
+    <Content Include="Images\fishTitle.png" />
+    <Content Include="Images\fullEnvanter.png" />
+    <Content Include="Images\gameForgeOyna.png" />
+    <Content Include="Images\gForgeAppIcon.png" />
+    <Content Include="Images\gForgeMaximize.png" />
+    <Content Include="Images\gForgeOynaDown.png" />
+    <Content Include="Images\gForgeOynaUp.png" />
+    <Content Include="Images\inventory.png" />
+    <Content Include="Images\kampAtesiGreen.png" />
+    <Content Include="Images\kampIcon.png" />
+    <Content Include="Images\karakterTitle.png" />
+    <Content Include="Images\kediIsirigi.png" />
+    <Content Include="Images\metin2Icon.png" />
+    <Content Include="Images\miniMap.png" />
+    <Content Include="Images\otoAvBaslatButton.png" />
+    <Content Include="Images\otoAvDurdurButton.png" />
+    <Content Include="Images\otoAvOdakButton.png" />
+    <Content Include="Images\otoAvSaldirButton.png" />
+    <Content Include="Images\otoAvTitle.png" />
+    <Content Include="Images\pageFour.png" />
+    <Content Include="Images\pageOne.png" />
+    <Content Include="Images\pageThree.png" />
+    <Content Include="Images\pageTwo.png" />
+    <Content Include="Images\redPotB.png" />
+    <Content Include="Images\redPotK.png" />
+    <Content Include="Images\redPotO.png" />
+    <Content Include="Images\redPotXxl.png" />
+    <Content Include="Images\saleCross.png" />
+    <Content Include="Images\settingButton.png" />
+    <Content Include="Images\silahciGreen.png" />
+    <Content Include="Images\silahciOptionPage.png" />
+    <Content Include="Images\silahciShop.png" />
+    <Content Include="Images\simyaciEvet.png" />
+    <Content Include="Images\simyaciGreen.png" />
+    <Content Include="Images\statuImproTitle.png" />
+    <Content Include="Images\statusPlus.png" />
+    <Content Include="Images\tradeIcon.png" />
+    <Content Include="Images\whisperBox.png" />
+    <Content Include="Images\whisperPanelDet.png" />
+    <Content Include="Images\worm.png" />
+    <Content Include="Images\worm200.png" />
+    <Content Include="Images\yangYok.png" />
+    <Content Include="Images\yereAtma.png" />
+    <Content Include="ScreenShot\test.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

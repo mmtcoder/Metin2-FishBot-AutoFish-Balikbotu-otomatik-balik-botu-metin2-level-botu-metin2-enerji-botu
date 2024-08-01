@@ -36,8 +36,11 @@ namespace MusicPlayerApp
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tabControlTelegram = new System.Windows.Forms.TabControl();
             this.tabPageFishing = new System.Windows.Forms.TabPage();
+            this.checkBoxAdaptableFish = new System.Windows.Forms.CheckBox();
+            this.checkBoxDeniz = new System.Windows.Forms.CheckBox();
             this.checkBoxWhisperActive = new System.Windows.Forms.CheckBox();
             this.checkBoxChatActive = new System.Windows.Forms.CheckBox();
             this.checkBoxFishingMiniBreak = new System.Windows.Forms.CheckBox();
@@ -53,6 +56,7 @@ namespace MusicPlayerApp
             this.checkBoxEnableTime = new System.Windows.Forms.CheckBox();
             this.checkBoxHepsi = new System.Windows.Forms.CheckBox();
             this.checkBoxKurbaga = new System.Windows.Forms.CheckBox();
+            this.checkBoxKadife = new System.Windows.Forms.CheckBox();
             this.checkBoxPalamut = new System.Windows.Forms.CheckBox();
             this.checkBoxAltinSudak = new System.Windows.Forms.CheckBox();
             this.checkBoxYabbie = new System.Windows.Forms.CheckBox();
@@ -68,6 +72,7 @@ namespace MusicPlayerApp
             this.pictureBoxMainForm = new System.Windows.Forms.PictureBox();
             this.buttonScreenShot = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.checkBoxETPPickUp = new System.Windows.Forms.CheckBox();
             this.label29 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.textBoxSkillF4 = new System.Windows.Forms.TextBox();
@@ -124,7 +129,7 @@ namespace MusicPlayerApp
             this.label13 = new System.Windows.Forms.Label();
             this.checkBoxTelegram = new System.Windows.Forms.CheckBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.checkBoxETPPickUp = new System.Windows.Forms.CheckBox();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.tabControlTelegram.SuspendLayout();
             this.tabPageFishing.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMainForm)).BeginInit();
@@ -144,11 +149,13 @@ namespace MusicPlayerApp
             this.tabControlTelegram.Location = new System.Drawing.Point(0, 0);
             this.tabControlTelegram.Name = "tabControlTelegram";
             this.tabControlTelegram.SelectedIndex = 0;
-            this.tabControlTelegram.Size = new System.Drawing.Size(486, 472);
+            this.tabControlTelegram.Size = new System.Drawing.Size(503, 472);
             this.tabControlTelegram.TabIndex = 0;
             // 
             // tabPageFishing
             // 
+            this.tabPageFishing.Controls.Add(this.checkBoxAdaptableFish);
+            this.tabPageFishing.Controls.Add(this.checkBoxDeniz);
             this.tabPageFishing.Controls.Add(this.checkBoxWhisperActive);
             this.tabPageFishing.Controls.Add(this.checkBoxChatActive);
             this.tabPageFishing.Controls.Add(this.checkBoxFishingMiniBreak);
@@ -164,6 +171,7 @@ namespace MusicPlayerApp
             this.tabPageFishing.Controls.Add(this.checkBoxEnableTime);
             this.tabPageFishing.Controls.Add(this.checkBoxHepsi);
             this.tabPageFishing.Controls.Add(this.checkBoxKurbaga);
+            this.tabPageFishing.Controls.Add(this.checkBoxKadife);
             this.tabPageFishing.Controls.Add(this.checkBoxPalamut);
             this.tabPageFishing.Controls.Add(this.checkBoxAltinSudak);
             this.tabPageFishing.Controls.Add(this.checkBoxYabbie);
@@ -181,16 +189,40 @@ namespace MusicPlayerApp
             this.tabPageFishing.Location = new System.Drawing.Point(4, 22);
             this.tabPageFishing.Name = "tabPageFishing";
             this.tabPageFishing.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageFishing.Size = new System.Drawing.Size(478, 446);
+            this.tabPageFishing.Size = new System.Drawing.Size(495, 446);
             this.tabPageFishing.TabIndex = 0;
             this.tabPageFishing.Text = "Fishing";
             this.tabPageFishing.UseVisualStyleBackColor = true;
             this.tabPageFishing.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // checkBoxAdaptableFish
+            // 
+            this.checkBoxAdaptableFish.AutoSize = true;
+            this.checkBoxAdaptableFish.Location = new System.Drawing.Point(374, 107);
+            this.checkBoxAdaptableFish.Name = "checkBoxAdaptableFish";
+            this.checkBoxAdaptableFish.Size = new System.Drawing.Size(93, 17);
+            this.checkBoxAdaptableFish.TabIndex = 56;
+            this.checkBoxAdaptableFish.Text = "Adapte Tutma";
+            this.checkBoxAdaptableFish.UseVisualStyleBackColor = true;
+            this.checkBoxAdaptableFish.CheckedChanged += new System.EventHandler(this.checkBoxAdaptable_CheckedChanged);
+            // 
+            // checkBoxDeniz
+            // 
+            this.checkBoxDeniz.AutoSize = true;
+            this.checkBoxDeniz.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.checkBoxDeniz.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.checkBoxDeniz.Location = new System.Drawing.Point(405, 15);
+            this.checkBoxDeniz.Name = "checkBoxDeniz";
+            this.checkBoxDeniz.Size = new System.Drawing.Size(66, 17);
+            this.checkBoxDeniz.TabIndex = 1;
+            this.checkBoxDeniz.Text = "Denizkız";
+            this.checkBoxDeniz.UseVisualStyleBackColor = true;
+            this.checkBoxDeniz.Click += new System.EventHandler(this.checkBoxsFishes_Click);
+            // 
             // checkBoxWhisperActive
             // 
             this.checkBoxWhisperActive.AutoSize = true;
-            this.checkBoxWhisperActive.Location = new System.Drawing.Point(328, 108);
+            this.checkBoxWhisperActive.Location = new System.Drawing.Point(273, 107);
             this.checkBoxWhisperActive.Name = "checkBoxWhisperActive";
             this.checkBoxWhisperActive.Size = new System.Drawing.Size(104, 17);
             this.checkBoxWhisperActive.TabIndex = 54;
@@ -201,7 +233,7 @@ namespace MusicPlayerApp
             // checkBoxChatActive
             // 
             this.checkBoxChatActive.AutoSize = true;
-            this.checkBoxChatActive.Location = new System.Drawing.Point(191, 108);
+            this.checkBoxChatActive.Location = new System.Drawing.Point(175, 108);
             this.checkBoxChatActive.Name = "checkBoxChatActive";
             this.checkBoxChatActive.Size = new System.Drawing.Size(104, 17);
             this.checkBoxChatActive.TabIndex = 53;
@@ -213,7 +245,7 @@ namespace MusicPlayerApp
             // 
             this.checkBoxFishingMiniBreak.AutoSize = true;
             this.checkBoxFishingMiniBreak.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.checkBoxFishingMiniBreak.Location = new System.Drawing.Point(191, 84);
+            this.checkBoxFishingMiniBreak.Location = new System.Drawing.Point(175, 84);
             this.checkBoxFishingMiniBreak.Name = "checkBoxFishingMiniBreak";
             this.checkBoxFishingMiniBreak.Size = new System.Drawing.Size(275, 17);
             this.checkBoxFishingMiniBreak.TabIndex = 52;
@@ -223,7 +255,7 @@ namespace MusicPlayerApp
             // 
             // buttonCheckChat
             // 
-            this.buttonCheckChat.Location = new System.Drawing.Point(343, 193);
+            this.buttonCheckChat.Location = new System.Drawing.Point(327, 193);
             this.buttonCheckChat.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCheckChat.Name = "buttonCheckChat";
             this.buttonCheckChat.Size = new System.Drawing.Size(107, 20);
@@ -234,7 +266,7 @@ namespace MusicPlayerApp
             // 
             // textBoxMinMaxBreak
             // 
-            this.textBoxMinMaxBreak.Location = new System.Drawing.Point(427, 132);
+            this.textBoxMinMaxBreak.Location = new System.Drawing.Point(411, 132);
             this.textBoxMinMaxBreak.Name = "textBoxMinMaxBreak";
             this.textBoxMinMaxBreak.Size = new System.Drawing.Size(39, 20);
             this.textBoxMinMaxBreak.TabIndex = 50;
@@ -244,7 +276,7 @@ namespace MusicPlayerApp
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(330, 133);
+            this.label7.Location = new System.Drawing.Point(314, 133);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(90, 16);
             this.label7.TabIndex = 49;
@@ -252,7 +284,7 @@ namespace MusicPlayerApp
             // 
             // textBoxStopGameTime
             // 
-            this.textBoxStopGameTime.Location = new System.Drawing.Point(427, 160);
+            this.textBoxStopGameTime.Location = new System.Drawing.Point(411, 160);
             this.textBoxStopGameTime.Name = "textBoxStopGameTime";
             this.textBoxStopGameTime.Size = new System.Drawing.Size(39, 20);
             this.textBoxStopGameTime.TabIndex = 48;
@@ -260,7 +292,7 @@ namespace MusicPlayerApp
             // 
             // textBoxMaxWorkTime
             // 
-            this.textBoxMaxWorkTime.Location = new System.Drawing.Point(279, 194);
+            this.textBoxMaxWorkTime.Location = new System.Drawing.Point(263, 194);
             this.textBoxMaxWorkTime.Name = "textBoxMaxWorkTime";
             this.textBoxMaxWorkTime.Size = new System.Drawing.Size(32, 20);
             this.textBoxMaxWorkTime.TabIndex = 47;
@@ -268,7 +300,7 @@ namespace MusicPlayerApp
             // 
             // textBoxMinWorkTime
             // 
-            this.textBoxMinWorkTime.Location = new System.Drawing.Point(279, 162);
+            this.textBoxMinWorkTime.Location = new System.Drawing.Point(263, 162);
             this.textBoxMinWorkTime.Name = "textBoxMinWorkTime";
             this.textBoxMinWorkTime.Size = new System.Drawing.Size(32, 20);
             this.textBoxMinWorkTime.TabIndex = 46;
@@ -279,7 +311,7 @@ namespace MusicPlayerApp
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(325, 162);
+            this.label6.Location = new System.Drawing.Point(309, 162);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(100, 16);
             this.label6.TabIndex = 45;
@@ -289,7 +321,7 @@ namespace MusicPlayerApp
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(199, 196);
+            this.label5.Location = new System.Drawing.Point(183, 196);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(73, 16);
             this.label5.TabIndex = 44;
@@ -299,7 +331,7 @@ namespace MusicPlayerApp
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(199, 164);
+            this.label4.Location = new System.Drawing.Point(183, 164);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 16);
             this.label4.TabIndex = 43;
@@ -310,7 +342,7 @@ namespace MusicPlayerApp
             this.checkBoxEnableTime.AutoSize = true;
             this.checkBoxEnableTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.checkBoxEnableTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.checkBoxEnableTime.Location = new System.Drawing.Point(186, 133);
+            this.checkBoxEnableTime.Location = new System.Drawing.Point(173, 133);
             this.checkBoxEnableTime.Name = "checkBoxEnableTime";
             this.checkBoxEnableTime.Size = new System.Drawing.Size(142, 20);
             this.checkBoxEnableTime.TabIndex = 42;
@@ -324,7 +356,7 @@ namespace MusicPlayerApp
             this.checkBoxHepsi.AutoSize = true;
             this.checkBoxHepsi.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.checkBoxHepsi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.checkBoxHepsi.Location = new System.Drawing.Point(275, 60);
+            this.checkBoxHepsi.Location = new System.Drawing.Point(260, 60);
             this.checkBoxHepsi.Name = "checkBoxHepsi";
             this.checkBoxHepsi.Size = new System.Drawing.Size(53, 17);
             this.checkBoxHepsi.TabIndex = 41;
@@ -337,7 +369,7 @@ namespace MusicPlayerApp
             this.checkBoxKurbaga.AutoSize = true;
             this.checkBoxKurbaga.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.checkBoxKurbaga.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.checkBoxKurbaga.Location = new System.Drawing.Point(346, 37);
+            this.checkBoxKurbaga.Location = new System.Drawing.Point(330, 37);
             this.checkBoxKurbaga.Name = "checkBoxKurbaga";
             this.checkBoxKurbaga.Size = new System.Drawing.Size(66, 17);
             this.checkBoxKurbaga.TabIndex = 40;
@@ -345,12 +377,25 @@ namespace MusicPlayerApp
             this.checkBoxKurbaga.UseVisualStyleBackColor = true;
             this.checkBoxKurbaga.Click += new System.EventHandler(this.checkBoxsFishes_Click);
             // 
+            // checkBoxKadife
+            // 
+            this.checkBoxKadife.AutoSize = true;
+            this.checkBoxKadife.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.checkBoxKadife.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.checkBoxKadife.Location = new System.Drawing.Point(330, 61);
+            this.checkBoxKadife.Name = "checkBoxKadife";
+            this.checkBoxKadife.Size = new System.Drawing.Size(56, 17);
+            this.checkBoxKadife.TabIndex = 55;
+            this.checkBoxKadife.Text = "Kadife";
+            this.checkBoxKadife.UseVisualStyleBackColor = true;
+            this.checkBoxKadife.Click += new System.EventHandler(this.checkBoxsFishes_Click);
+            // 
             // checkBoxPalamut
             // 
             this.checkBoxPalamut.AutoSize = true;
             this.checkBoxPalamut.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.checkBoxPalamut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.checkBoxPalamut.Location = new System.Drawing.Point(276, 37);
+            this.checkBoxPalamut.Location = new System.Drawing.Point(260, 37);
             this.checkBoxPalamut.Name = "checkBoxPalamut";
             this.checkBoxPalamut.Size = new System.Drawing.Size(64, 17);
             this.checkBoxPalamut.TabIndex = 39;
@@ -363,7 +408,7 @@ namespace MusicPlayerApp
             this.checkBoxAltinSudak.AutoSize = true;
             this.checkBoxAltinSudak.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.checkBoxAltinSudak.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.checkBoxAltinSudak.Location = new System.Drawing.Point(345, 15);
+            this.checkBoxAltinSudak.Location = new System.Drawing.Point(329, 15);
             this.checkBoxAltinSudak.Name = "checkBoxAltinSudak";
             this.checkBoxAltinSudak.Size = new System.Drawing.Size(79, 17);
             this.checkBoxAltinSudak.TabIndex = 38;
@@ -376,7 +421,7 @@ namespace MusicPlayerApp
             this.checkBoxYabbie.AutoSize = true;
             this.checkBoxYabbie.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.checkBoxYabbie.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.checkBoxYabbie.Location = new System.Drawing.Point(276, 15);
+            this.checkBoxYabbie.Location = new System.Drawing.Point(260, 15);
             this.checkBoxYabbie.Name = "checkBoxYabbie";
             this.checkBoxYabbie.Size = new System.Drawing.Size(59, 17);
             this.checkBoxYabbie.TabIndex = 37;
@@ -389,7 +434,7 @@ namespace MusicPlayerApp
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(325, 390);
+            this.label3.Location = new System.Drawing.Point(309, 390);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 18);
@@ -399,7 +444,7 @@ namespace MusicPlayerApp
             // comboBoxPathWays
             // 
             this.comboBoxPathWays.FormattingEnabled = true;
-            this.comboBoxPathWays.Location = new System.Drawing.Point(328, 412);
+            this.comboBoxPathWays.Location = new System.Drawing.Point(312, 412);
             this.comboBoxPathWays.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxPathWays.Name = "comboBoxPathWays";
             this.comboBoxPathWays.Size = new System.Drawing.Size(92, 21);
@@ -411,7 +456,7 @@ namespace MusicPlayerApp
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(324, 329);
+            this.label2.Location = new System.Drawing.Point(308, 329);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 20);
@@ -423,7 +468,7 @@ namespace MusicPlayerApp
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label1.Location = new System.Drawing.Point(181, 329);
+            this.label1.Location = new System.Drawing.Point(165, 329);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 20);
@@ -432,7 +477,7 @@ namespace MusicPlayerApp
             // 
             // textBoxFileName
             // 
-            this.textBoxFileName.Location = new System.Drawing.Point(328, 355);
+            this.textBoxFileName.Location = new System.Drawing.Point(312, 355);
             this.textBoxFileName.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxFileName.Name = "textBoxFileName";
             this.textBoxFileName.Size = new System.Drawing.Size(93, 20);
@@ -441,7 +486,7 @@ namespace MusicPlayerApp
             // 
             // textBoxRect
             // 
-            this.textBoxRect.Location = new System.Drawing.Point(185, 355);
+            this.textBoxRect.Location = new System.Drawing.Point(169, 355);
             this.textBoxRect.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxRect.Name = "textBoxRect";
             this.textBoxRect.Size = new System.Drawing.Size(139, 20);
@@ -452,7 +497,7 @@ namespace MusicPlayerApp
             // 
             this.buttonQuickSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonQuickSS.ForeColor = System.Drawing.Color.Teal;
-            this.buttonQuickSS.Location = new System.Drawing.Point(185, 396);
+            this.buttonQuickSS.Location = new System.Drawing.Point(169, 396);
             this.buttonQuickSS.Margin = new System.Windows.Forms.Padding(2);
             this.buttonQuickSS.Name = "buttonQuickSS";
             this.buttonQuickSS.Size = new System.Drawing.Size(130, 43);
@@ -466,7 +511,7 @@ namespace MusicPlayerApp
             this.labelStartStatus.AutoSize = true;
             this.labelStartStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelStartStatus.ForeColor = System.Drawing.Color.Red;
-            this.labelStartStatus.Location = new System.Drawing.Point(187, 291);
+            this.labelStartStatus.Location = new System.Drawing.Point(171, 291);
             this.labelStartStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelStartStatus.Name = "labelStartStatus";
             this.labelStartStatus.Size = new System.Drawing.Size(57, 24);
@@ -476,8 +521,8 @@ namespace MusicPlayerApp
             // 
             // buttonFishingStart
             // 
-            this.buttonFishingStart.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.buttonFishingStart.Location = new System.Drawing.Point(191, 231);
+            this.buttonFishingStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonFishingStart.Location = new System.Drawing.Point(175, 231);
             this.buttonFishingStart.Margin = new System.Windows.Forms.Padding(2);
             this.buttonFishingStart.Name = "buttonFishingStart";
             this.buttonFishingStart.Size = new System.Drawing.Size(184, 46);
@@ -488,7 +533,7 @@ namespace MusicPlayerApp
             // 
             // pictureBoxMainForm
             // 
-            this.pictureBoxMainForm.Location = new System.Drawing.Point(22, 15);
+            this.pictureBoxMainForm.Location = new System.Drawing.Point(7, 15);
             this.pictureBoxMainForm.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxMainForm.Name = "pictureBoxMainForm";
             this.pictureBoxMainForm.Size = new System.Drawing.Size(153, 424);
@@ -499,7 +544,7 @@ namespace MusicPlayerApp
             // buttonScreenShot
             // 
             this.buttonScreenShot.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.buttonScreenShot.Location = new System.Drawing.Point(191, 15);
+            this.buttonScreenShot.Location = new System.Drawing.Point(175, 15);
             this.buttonScreenShot.Margin = new System.Windows.Forms.Padding(2);
             this.buttonScreenShot.Name = "buttonScreenShot";
             this.buttonScreenShot.Size = new System.Drawing.Size(79, 63);
@@ -553,11 +598,23 @@ namespace MusicPlayerApp
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(478, 446);
+            this.tabPage2.Size = new System.Drawing.Size(495, 446);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Level and Farm";
             this.tabPage2.UseVisualStyleBackColor = true;
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
+            // 
+            // checkBoxETPPickUp
+            // 
+            this.checkBoxETPPickUp.AutoSize = true;
+            this.checkBoxETPPickUp.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.checkBoxETPPickUp.Location = new System.Drawing.Point(23, 258);
+            this.checkBoxETPPickUp.Name = "checkBoxETPPickUp";
+            this.checkBoxETPPickUp.Size = new System.Drawing.Size(324, 17);
+            this.checkBoxETPPickUp.TabIndex = 39;
+            this.checkBoxETPPickUp.Text = "Yerden ETP görünce topla(Sadece yakınındaki düşeni görebilir)";
+            this.checkBoxETPPickUp.UseVisualStyleBackColor = true;
+            this.checkBoxETPPickUp.CheckedChanged += new System.EventHandler(this.checkBoxETPPickUp_CheckedChanged);
             // 
             // label29
             // 
@@ -1023,7 +1080,7 @@ namespace MusicPlayerApp
             // 
             // buttonLevelStart
             // 
-            this.buttonLevelStart.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonLevelStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonLevelStart.Location = new System.Drawing.Point(375, 271);
             this.buttonLevelStart.Name = "buttonLevelStart";
             this.buttonLevelStart.Size = new System.Drawing.Size(95, 29);
@@ -1048,7 +1105,7 @@ namespace MusicPlayerApp
             this.tabPageTelegram.Location = new System.Drawing.Point(4, 22);
             this.tabPageTelegram.Name = "tabPageTelegram";
             this.tabPageTelegram.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageTelegram.Size = new System.Drawing.Size(478, 446);
+            this.tabPageTelegram.Size = new System.Drawing.Size(495, 446);
             this.tabPageTelegram.TabIndex = 2;
             this.tabPageTelegram.Text = "Haberleşme ve Diğer";
             this.tabPageTelegram.UseVisualStyleBackColor = true;
@@ -1056,22 +1113,22 @@ namespace MusicPlayerApp
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label33.ForeColor = System.Drawing.Color.Red;
-            this.label33.Location = new System.Drawing.Point(142, 331);
+            this.label33.Location = new System.Drawing.Point(172, 331);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(79, 20);
+            this.label33.Size = new System.Drawing.Size(91, 20);
             this.label33.TabIndex = 10;
             this.label33.Text = "Kuveyt Türk";
             // 
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label32.ForeColor = System.Drawing.Color.Red;
             this.label32.Location = new System.Drawing.Point(22, 331);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(114, 20);
+            this.label32.Size = new System.Drawing.Size(135, 20);
             this.label32.TabIndex = 9;
             this.label32.Text = "Mümtaz Taşdelen";
             // 
@@ -1098,10 +1155,10 @@ namespace MusicPlayerApp
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label30.Location = new System.Drawing.Point(19, 247);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(100, 20);
+            this.label30.Size = new System.Drawing.Size(118, 20);
             this.label30.TabIndex = 6;
             this.label30.Text = "BAĞIŞ YAP :=)";
             // 
@@ -1119,7 +1176,7 @@ namespace MusicPlayerApp
             // 
             // buttonTelegramTest
             // 
-            this.buttonTelegramTest.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonTelegramTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonTelegramTest.ForeColor = System.Drawing.Color.Blue;
             this.buttonTelegramTest.Location = new System.Drawing.Point(23, 131);
             this.buttonTelegramTest.Name = "buttonTelegramTest";
@@ -1170,23 +1227,11 @@ namespace MusicPlayerApp
             this.label12.TabIndex = 0;
             this.label12.Text = "Telegram Bot Aktif Et";
             // 
-            // checkBoxETPPickUp
-            // 
-            this.checkBoxETPPickUp.AutoSize = true;
-            this.checkBoxETPPickUp.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.checkBoxETPPickUp.Location = new System.Drawing.Point(23, 258);
-            this.checkBoxETPPickUp.Name = "checkBoxETPPickUp";
-            this.checkBoxETPPickUp.Size = new System.Drawing.Size(324, 17);
-            this.checkBoxETPPickUp.TabIndex = 39;
-            this.checkBoxETPPickUp.Text = "Yerden ETP görünce topla(Sadece yakınındaki düşeni görebilir)";
-            this.checkBoxETPPickUp.UseVisualStyleBackColor = true;
-            this.checkBoxETPPickUp.CheckedChanged += new System.EventHandler(this.checkBoxETPPickUp_CheckedChanged);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(486, 472);
+            this.ClientSize = new System.Drawing.Size(503, 472);
             this.Controls.Add(this.tabControlTelegram);
             this.ForeColor = System.Drawing.SystemColors.Highlight;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -1226,6 +1271,7 @@ namespace MusicPlayerApp
         private System.Windows.Forms.CheckBox checkBoxEnableTime;
         private System.Windows.Forms.CheckBox checkBoxHepsi;
         private System.Windows.Forms.CheckBox checkBoxKurbaga;
+        private System.Windows.Forms.CheckBox checkBoxKadife;
         private System.Windows.Forms.CheckBox checkBoxPalamut;
         private System.Windows.Forms.CheckBox checkBoxAltinSudak;
         private System.Windows.Forms.CheckBox checkBoxYabbie;
@@ -1300,6 +1346,9 @@ namespace MusicPlayerApp
         private System.Windows.Forms.CheckBox checkBoxWhisperActive;
         private System.Windows.Forms.CheckBox checkBoxChatActive;
         private System.Windows.Forms.CheckBox checkBoxETPPickUp;
+        private System.Windows.Forms.CheckBox checkBoxDeniz;
+        private System.Windows.Forms.CheckBox checkBoxAdaptableFish;
+        private System.Windows.Forms.ToolTip toolTip;
     }
 }
 
