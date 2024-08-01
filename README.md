@@ -1,4 +1,3 @@
-![v2](https://github.com/user-attachments/assets/39b2dcb0-e585-4184-b8a5-2d97c91d34ee)
 # Metin2-FishBot-AutoFish-Balikbotu-otomatik-balik-botu-metin2-level-botu-metin2-enerji-botu
 
 ## GENEL 
@@ -98,7 +97,14 @@ Bilgisayarınızda aktif kullandığınız başka programlar yok ise sadece 2 Gh
 
 # BALIK BOTU NASIL ÇALIŞTIRILMALI
 
-![2](https://github.com/user-attachments/assets/f294a782-112a-4f13-8cf6-e7c4abbae34a)
+![ı1ı1](https://github.com/user-attachments/assets/98d1c4ed-6728-4761-b873-b8842fe8c994)
+YENİ VERSİYON EKLENDİ
+V2 - EKLENEN ÖZELLİKLER
+Kadife ve denizkızı anahtarı tutma özelliği eklendi.
+Artık kurbağa ve kadifeyi de kızartıyor.
+Ayrıca ''Adapte tutma'' seçeneği ile etrafınızda oyuncu varsa normal hızda tutar(Bu seçeneği aktif etmez iseniz hızlı tutar.)
+
+
 
 * **Ekranın yeri hiç kıpırdamamalı** ve **800x600** pencere modunda oynanmalı
 * Balıkçı karakterin hemen **arka kısımında** olmalı. Yani karakter geriye doğru gittiği zaman **mutlaka** karakterin kamera açısından balıkçı **görülmeli**
