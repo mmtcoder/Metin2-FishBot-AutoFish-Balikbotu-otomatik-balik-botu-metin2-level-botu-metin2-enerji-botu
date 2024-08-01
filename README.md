@@ -1,3 +1,4 @@
+![v2](https://github.com/user-attachments/assets/39b2dcb0-e585-4184-b8a5-2d97c91d34ee)
 # Metin2-FishBot-AutoFish-Balikbotu-otomatik-balik-botu-metin2-level-botu-metin2-enerji-botu
 
 ## GENEL 
