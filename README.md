@@ -13,7 +13,7 @@
 
 
 > [!WARNING]
-> **800x600 pencere modunda oynanmalı** ve **Ekranın yeri asla kıpırdatılmamalı. **
+> **800x600 pencere modunda oynanmalı** ve **Ekranın yeri asla kıpırdatılmamalı.**
 > Windows Güncelleştirmelerinizde mutlaka **.Net Framework** güncelleştirmlerini yapın yada bilgisayarınız **en güncel** halde olsun.
 
 
