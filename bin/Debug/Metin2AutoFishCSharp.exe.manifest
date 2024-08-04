@@ -26,16 +26,16 @@
       </applicationRequestMinimum>
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
         <!--
-          UAC Bildirim Seçenekleri
-          Windows Kullanıcı Hesabı Denetimi düzeyini değiştirmek istiyorsanız,
-           requestedExecutionLevel düğümünü aşağıdakilerden biriyle değiştirin.
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
 
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
         <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
         <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
 
-         Geriye dönük uyumluluk için Dosya ve Kayıt Defteri Sanallaştırması
-         kullanmak istiyorsanız, requestedExecutionLevel düğümünü silin.
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
     -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
       </requestedPrivileges>
@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Metin2AutoFishCSharp.exe" size="225280">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Metin2AutoFishCSharp.exe" size="224768">
       <assemblyIdentity name="Metin2AutoFishCSharp" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>www2jg6s8oaSFf+3Y9EqpjkwUFkzAI/W8BqxYeWV42U=</dsig:DigestValue>
+        <dsig:DigestValue>k1pmZNcWVlI+aqOo9DM8vccpdwzDmUbdrl0ZrRBCaV4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -125,22 +125,22 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="ChatResources\ChatQuestionAnswer\ChatQuestAnswer.txt" size="2824">
+  <file name="ChatResources\ChatQuestionAnswer\ChatQuestAnswer.txt" size="2992">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>mEwyXI0gmkwDYsHwJbJhCJKWO3jZRnbNjF1jupGcWPQ=</dsig:DigestValue>
+      <dsig:DigestValue>AK+SYUMcz7INd/vCSuW7zCvKqgkjNDlTtoBc4tIUGQU=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ChatResources\ChatQuestionAnswer\RecordChats.txt" size="274">
+  <file name="ChatResources\ChatQuestionAnswer\RecordChats.txt" size="0">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>U+Dj0sC/60Pm6A3zrE1OBKE1Wwkju6MAqcEyZ6W/H5g=</dsig:DigestValue>
+      <dsig:DigestValue>47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="ChatResources\ChatQuestionAnswer\RecordWhisperChat.txt" size="0">
