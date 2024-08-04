@@ -746,11 +746,12 @@ namespace MusicPlayerApp.Sources.CharacterHandle
                     pageCombineItems200 = 1;
                 }
                 if (pageCombineItems200 == 1)
-                {
+                { 
                     ClickWantedInventoryPage(InventoryPage.Page_1);
                 }
                 else
                 {
+                    storeValue = 0;
                     ClickWantedInventoryPage(InventoryPage.Page_2);
                 }
 
@@ -773,7 +774,7 @@ namespace MusicPlayerApp.Sources.CharacterHandle
                                     screenshot.ImageArraySpecifiedArea(rectScanSlot));
                                 //Detect it doesn't has 200 white Number
                                 if(imageObject.FindAllImagesBoolArrays(arrayWhite200Num,coor.Rect200WhiteSample(),
-                                    scannedWhiteImage,rectScanSlot).Length == 0)
+                                    scannedWhiteImage,rectScanSlot).Length <= 0)
                                 {
                                     if (storeValue == 0)
                                     {
@@ -787,12 +788,12 @@ namespace MusicPlayerApp.Sources.CharacterHandle
                                         storeValue = 0;
                                         
                                         
-                                        if(xCombineItems != 4)
-                                        {
+                                       // if(xCombineItems != 4)
+                                       // {
                                             xCombineItems--;
                                             
-                                        }
-                                        else if (yCombineItems != 9)
+                                       // }
+                                        if (yCombineItems != 9)
                                         {
                                             yCombineItems--;
                                         }
@@ -812,7 +813,7 @@ namespace MusicPlayerApp.Sources.CharacterHandle
                                                 {
                                                     DebugPfCnsl.println("tespit edilen dikdörtgenlerin ikiside aynı");
                                                     yCombineItems++;
-                                                    storeValue = 1;
+                                                   // storeValue = 1;
                                                     break;
                                                 }
                                                 inputGame.MouseMoveAndPressLeft((rectCombineOne.X + rectCombineOne.Width / 2),
