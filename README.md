@@ -11,6 +11,8 @@
 > [!TIP]
 > Eğer program işinize yarayıp destekte bulunmak isterseniz gerekli bilgiler **Haberleşme ve Diğer** kısmında görebilirsin :+1:.
 
+> [!TIP]
+> Videolu anlatım için https://www.youtube.com/watch?v=MEqj1Hd0eiI  ziyaret edebilirsiniz
 
 > [!WARNING]
 > **800x600 pencere modunda oynanmalı** ve **Ekranın yeri asla kıpırdatılmamalı.**
