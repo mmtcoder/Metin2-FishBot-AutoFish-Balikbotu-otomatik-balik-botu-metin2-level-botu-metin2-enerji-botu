@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Metin2AutoFishCSharp.exe" size="224768">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Metin2AutoFishCSharp.exe" size="225280">
       <assemblyIdentity name="Metin2AutoFishCSharp" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>k1pmZNcWVlI+aqOo9DM8vccpdwzDmUbdrl0ZrRBCaV4=</dsig:DigestValue>
+        <dsig:DigestValue>kTQyFuBJNYE24JYtsQzhiA4ORx7ZyYjUPWZRMdMOHog=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
