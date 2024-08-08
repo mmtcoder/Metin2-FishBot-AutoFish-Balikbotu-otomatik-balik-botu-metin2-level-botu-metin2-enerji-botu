@@ -43,7 +43,7 @@ namespace MusicPlayerApp.Sources
         {
             float MyCpuSpeed = MeasureCPUSpeed();
 
-            if(FAST_PC_CPU_MHZ - MyCpuSpeed >= 35)
+            if(FAST_PC_CPU_MHZ - MyCpuSpeed >= 55)
             {
                 DebugPfCnsl.println("This Pc is slow :( ");
                 return true;
