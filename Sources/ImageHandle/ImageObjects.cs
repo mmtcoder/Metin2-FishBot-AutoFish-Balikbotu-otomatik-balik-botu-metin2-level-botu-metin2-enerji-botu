@@ -165,6 +165,8 @@ namespace MusicPlayerApp.Sources.ImageHandle
                 convertBitMapToIntArray(ImagePathNames.palamutChatFileName, PathWayStruct.PATH_FISHES));
             arrayPinkKurbaga = RecordWantedColorIntArray(ColorGame.CHAT_PINK_COLOR,
                 convertBitMapToIntArray(ImagePathNames.kurbagaChatFileName, PathWayStruct.PATH_FISHES));
+            arrayPinkOlta = RecordWantedColorIntArray(ColorGame.CHAT_PINK_COLOR,
+                convertBitMapToIntArray(ImagePathNames.oltaChatFileName, PathWayStruct.PATH_FISHES));
             arrayPinkKadife = RecordWantedColorIntArray(ColorGame.CHAT_PINK_COLOR,
                 convertBitMapToIntArray(ImagePathNames.kadifeChatFileName, PathWayStruct.PATH_FISHES));
             arrayPinkDenizkiz = RecordWantedColorIntArray(ColorGame.CHAT_PINK_COLOR,
