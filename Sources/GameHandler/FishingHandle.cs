@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Drawing.Imaging;
 using System.Drawing;
@@ -35,11 +35,14 @@ namespace MusicPlayerApp.Sources.GameHandler
         private int fishPixelTwelveValue = -13018248;
         private int fishPixelThirteenthValue = -10329738;
         private int fishPixelFourteenthValue = -13084038;
+        private int fishPixelFiveteenthValue = -13084039;
+        private int fishPixelSixteenthValue = -12952455;
+        private int fishPixelSeventeenthValue = -12952712;
 
         static int storeAttempt = 0;
         private int emptyCounter = 0;
         private int oldEmptyCounter = 0;
-         private int slotCounter = 0;
+        private int slotCounter = 0;
 
 
 
@@ -191,7 +194,7 @@ namespace MusicPlayerApp.Sources.GameHandler
                         {
                             if (ThreadGlobals.isFishingStopped) return;
                             inputs.KeyPress(KeyboardInput.ScanCodeShort.ESCAPE);
-                            TimerGame.SleepRandom(15, 30);
+                            TimerGame.SleepRandom(15,30);
                         }
                         HandlePinkChat();
                         if(!isHandlePinkFuncWorked) 
@@ -434,12 +437,16 @@ namespace MusicPlayerApp.Sources.GameHandler
                     rgbFishPixel = arrayScreenShot[(y * rectFish.Width) + x];
 
                     if (rgbFishPixel == fishPixelOneValue || rgbFishPixel == fishPixelTwoValue
-                      || rgbFishPixel == fishPixelThreeValue || rgbFishPixel == fishPixelFourValue
-                      || rgbFishPixel == fishPixelFifthValue || rgbFishPixel == fishPixelSixthValue
+                     || rgbFishPixel == fishPixelThreeValue || rgbFishPixel == fishPixelFourValue
+                     || rgbFishPixel == fishPixelFifthValue || rgbFishPixel == fishPixelSixthValue
                      || rgbFishPixel == fishPixelSeventhValue || rgbFishPixel == fishPixelEightValue
                      || rgbFishPixel == fishPixelNinethValue || rgbFishPixel == fishPixelTenthValue
                      || rgbFishPixel == fishPixelElevenValue || rgbFishPixel == fishPixelTwelveValue
-                     || rgbFishPixel == fishPixelThirteenthValue || rgbFishPixel == fishPixelFourteenthValue)
+                     || rgbFishPixel == fishPixelThirteenthValue || rgbFishPixel == fishPixelFourteenthValue
+                     || rgbFishPixel == fishPixelFiveteenthValue || rgbFishPixel == fishPixelSixteenthValue
+                     ||rgbFishPixel== fishPixelSeventeenthValue)
+
+
                         {
                         if (TimerGame.IS_PC_SLOW)
                         {
@@ -695,6 +702,10 @@ namespace MusicPlayerApp.Sources.GameHandler
             }
             if (ThreadGlobals.isHepsiSelected)
             {
+                if (gameImages.compareTwoArrayQuickly(gameImages.arrayPinkOlta, targetPinkChat))
+                {
+                    return false;
+                }
                 return true;
             }
             if(ThreadGlobals.isYabbieSelected)
