@@ -79,6 +79,7 @@ namespace MusicPlayerApp.Sources.ImageHandle
         public static readonly string cannotFishChatFileName = "cannotFishChat.png";
         public static readonly string exitChatFileName = "exitChat.png";
         public static readonly string kurbagaChatFileName = "kurbagaChat.png";
+        public static readonly string oltaChatFileName = "oltaChat.png";
         public static readonly string kadifeChatFileName = "kadifeChat.png";
         public static readonly string denizkızChatFileName = "denizChat.png";
         public static readonly string palamutChatFileName = "palamutChat.png";
