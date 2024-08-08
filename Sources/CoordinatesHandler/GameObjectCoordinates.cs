@@ -25,7 +25,7 @@ namespace MusicPlayerApp.Sources
             //return new Rectangle(181, 154, 124, 124);
             //return new Rectangle(186, 160, 113, 113);
             Point currentMetin2Icon = CheckGameScreenPlace();
-            return new Rectangle(196 + currentMetin2Icon.X, 162 + currentMetin2Icon.Y, 113, 113);
+            return new Rectangle(187 + currentMetin2Icon.X, 159 + currentMetin2Icon.Y, 123, 123);
         }
 
         public Rectangle RectChatArea()
