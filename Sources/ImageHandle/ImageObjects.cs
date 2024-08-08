@@ -78,6 +78,7 @@ namespace MusicPlayerApp.Sources.ImageHandle
         public int[] arrayPinkPalamut { get; private set; }
         public int[] arrayPinkKurbaga { get; private set; }
         public int[] arrayPinkKadife { get; private set; }
+        public int[] arrayPinkOlta { get; private set; }
         public int[] arrayPinkDenizkiz { get; private set; }
         public int[] arrayPinkTon { get; private set; }
         public int[] arrayPinkYerYok { get; private set; }
