@@ -26,16 +26,16 @@
       </applicationRequestMinimum>
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
         <!--
-          UAC Manifest Options
-          If you want to change the Windows User Account Control level replace the
-          requestedExecutionLevel node with one of the following.
+          UAC Bildirim Seçenekleri
+          Windows Kullanıcı Hesabı Denetimi düzeyini değiştirmek istiyorsanız,
+           requestedExecutionLevel düğümünü aşağıdakilerden biriyle değiştirin.
 
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
         <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
         <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
 
-         If you want to utilize File and Registry Virtualization for backward
-         compatibility then delete the requestedExecutionLevel node.
+         Geriye dönük uyumluluk için Dosya ve Kayıt Defteri Sanallaştırması
+         kullanmak istiyorsanız, requestedExecutionLevel düğümünü silin.
     -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
       </requestedPrivileges>
@@ -61,7 +61,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>kTQyFuBJNYE24JYtsQzhiA4ORx7ZyYjUPWZRMdMOHog=</dsig:DigestValue>
+        <dsig:DigestValue>Np4oK9iniwvsBwMoGX5mE2ho20UMSE7cpnDzx0jeXCw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -125,13 +125,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="ChatResources\ChatQuestionAnswer\ChatQuestAnswer.txt" size="2992">
+  <file name="ChatResources\ChatQuestionAnswer\ChatQuestAnswer.txt" size="2824">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>AK+SYUMcz7INd/vCSuW7zCvKqgkjNDlTtoBc4tIUGQU=</dsig:DigestValue>
+      <dsig:DigestValue>mEwyXI0gmkwDYsHwJbJhCJKWO3jZRnbNjF1jupGcWPQ=</dsig:DigestValue>
     </hash>
   </file>
   <file name="ChatResources\ChatQuestionAnswer\RecordChats.txt" size="0">
