@@ -101,15 +101,15 @@ Bilgisayarınızda aktif kullandığınız başka programlar yok ise sadece 2 Gh
 # BALIK BOTU NASIL ÇALIŞTIRILMALI
 
 ![ı1ı1](https://github.com/user-attachments/assets/98d1c4ed-6728-4761-b873-b8842fe8c994)
-YENİ VERSİYON EKLENDİ
-V2 - EKLENEN ÖZELLİKLER
-Kadife ve denizkızı anahtarı tutma özelliği eklendi.
-Artık kurbağa ve kadifeyi de kızartıyor.
-Ayrıca ''Adapte tutma'' seçeneği ile etrafınızda oyuncu varsa normal hızda tutar(Bu seçeneği aktif etmez iseniz hızlı tutar.)
-**v2.1** 
-Hepsi seçeneği aktif edildiğinde artık ''Oltaya bir şey takıldı'' olduğunda geçiyor. 
-Tıklamalar eskisine göre daha iyi durumda. 
-8.08.2024
+-YENİ VERSİYON EKLENDİ
+# V2 - EKLENEN ÖZELLİKLER
+-Kadife ve denizkızı anahtarı tutma özelliği eklendi.
+-Artık kurbağa ve kadifeyi de kızartıyor.
+-Ayrıca ''Adapte tutma'' seçeneği ile etrafınızda oyuncu varsa normal hızda tutar(Bu seçeneği aktif etmez iseniz hızlı tutar.)
+#**v2.1** 
+-Hepsi seçeneği aktif edildiğinde artık ''Oltaya bir şey takıldı'' olduğunda geçiyor. 
+-Tıklamalar eskisine göre daha iyi durumda. 
+-8.08.2024
 
 
 
