@@ -502,12 +502,14 @@ namespace MusicPlayerApp
                 checkBoxPalamut.Checked = false;
                 checkBoxKurbaga.Checked = false;
                 checkBoxKadife.Checked = false;
+                checkBoxDeniz.Checked = false;
 
                 checkBoxYabbie.Enabled = false;
                 checkBoxAltinSudak.Enabled = false;
                 checkBoxKurbaga.Enabled = false;
                 checkBoxKadife.Enabled = false;
                 checkBoxPalamut.Enabled = false;
+                checkBoxDeniz.Enabled = false;
             }
             else
             {
@@ -519,6 +521,7 @@ namespace MusicPlayerApp
                 checkBoxDeniz.Enabled = true;
                 checkBoxKadife.Enabled = true;
                 checkBoxAltinSudak.Enabled = true;
+                checkBoxDeniz.Enabled = true;
 
                 checkBoxYabbie.Checked = true;
                 checkBoxAltinSudak.Checked = true;
@@ -526,6 +529,7 @@ namespace MusicPlayerApp
                 checkBoxKurbaga.Checked = false;
                 checkBoxDeniz.Checked = false;
                 checkBoxKadife.Checked = false;
+                checkBoxDeniz.Checked = false;
 
                 ThreadGlobals.isYabbieSelected = true;
                 ThreadGlobals.isAltinSudakSelected = true;
