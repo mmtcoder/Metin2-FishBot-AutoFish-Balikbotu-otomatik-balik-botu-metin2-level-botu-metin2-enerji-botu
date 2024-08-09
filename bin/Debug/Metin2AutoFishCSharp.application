@@ -3,20 +3,20 @@
   <assemblyIdentity name="Metin2AutoFishCSharp.application" version="1.0.0.5" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <description asmv2:publisher="Metin2AutoFishCSharp" asmv2:product="Metin2AutoFishCSharp" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <deployment install="true" mapFileExtensions="true">
-    <deploymentProvider codebase="http://desktop-e0e2pud/Metin2AutoFishCSharp/Metin2AutoFishCSharp.application" />
+    <deploymentProvider codebase="http://laptop-vrmh1s93/Metin2AutoFishCSharp/Metin2AutoFishCSharp.application" />
   </deployment>
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Metin2AutoFishCSharp.exe.manifest" size="74751">
+    <dependentAssembly dependencyType="install" codebase="Metin2AutoFishCSharp.exe.manifest" size="74704">
       <assemblyIdentity name="Metin2AutoFishCSharp.exe" version="1.0.0.5" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>NlCRzPiS5X24Zh2grhRHi6+/x2WkWdqoXEzBRiCaPCQ=</dsig:DigestValue>
+        <dsig:DigestValue>/3aAUJUKaLoi+kJJ2r6OOsS6FJFFThDci6BpkihUpqs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
