@@ -373,7 +373,7 @@ namespace MusicPlayerApp.Sources.GameHandler
                 while (charThings.CheckObjectInventory(imageObjects.arrayKampIcon, coordinate.RectItemSlotSizeSample(), InventoryPage.Page_1).Length <= 0 &&
                     charThings.CheckObjectInventory(imageObjects.arrayKampIcon, coordinate.RectItemSlotSizeSample(), InventoryPage.Page_2).Length <= 0)
                 {
-                    if (timerBuyKamp.CheckDelayTimeInSecond(15))
+                    if (timerBuyKamp.CheckDelayTimeInSecond(6))
                     {
                         if (ThreadGlobals.isFishingStopped && ThreadGlobals.isCharKilled) return;
 
@@ -473,7 +473,14 @@ namespace MusicPlayerApp.Sources.GameHandler
                         {
                             while (!GrillFishes(fishCoordinatesPageOne, fishCoordinatesPageTwo, rectKampGreenResult))
                             {
-                                GrillFishingHandle();
+                                if (CheckFisherIsThere())
+                                {
+                                    if (CheckFisherShopPage())
+                                    {
+                                        BuyKampAtasiFromFisher();
+                                        rectKampGreenResult = FireKampAtesi();
+                                    }
+                                }
                             }
                         }
 
@@ -486,7 +493,14 @@ namespace MusicPlayerApp.Sources.GameHandler
                     {
                         while (!GrillFishes(null, null, rectKampGreenResult))
                         {
-                            GrillFishingHandle();
+                            if (CheckFisherIsThere())
+                            {
+                                if (CheckFisherShopPage())
+                                {
+                                    BuyKampAtasiFromFisher();
+                                    rectKampGreenResult = FireKampAtesi();
+                                }
+                            }
                         }
                     }
                 }
