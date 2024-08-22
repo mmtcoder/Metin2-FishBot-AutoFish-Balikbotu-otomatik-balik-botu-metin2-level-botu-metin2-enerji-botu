@@ -4,6 +4,8 @@
 
 **Sadece 1 oyun hesabını destekler**. Program görüntü ekran kaydı alma mantığıyla yapılmıştır ve alınan görüntü işlenerek gerekli işlemler yapılmıştır. **Yani gerçek kişi balık tutuyormuş gibi program çalışır ve onun haricinde bilgisayarın başka bir program çalıştırması yada program açık iken sizin başka işlem yapmanız mümkün OLMAZ**.
 
+Telegram Hariç harf sayı tespit,nesne tespit vb. algoritmaların hepsi **bana aittir**
+
 > [!CAUTION]
 > Makro Kullanmak **Ban** Sebebidir.Eğitim amaçlı yazılmıştır ve herhangi sorumluluk **Kabul edilmemektedir**
 
