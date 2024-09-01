@@ -101,9 +101,12 @@ Bilgisayarınızda aktif kullandığınız başka programlar yok ise sadece 2 Gh
 - **DURDUR** mesajı gönderdiğinizde aktif olan botu durdurur.
 
 # BALIK BOTU NASIL ÇALIŞTIRILMALI
+* **Ekranın yeri hiç kıpırdamamalı** ve **800x600** pencere modunda oynanmalı
+* Balıkçı karakterin hemen **arka kısımında** olmalı. Yani karakter geriye doğru gittiği zaman **mutlaka** karakterin kamera açısından balıkçı **görülmeli**
+* Haritalar veya herhangi karakterin chat veya isim kısmını kapatacak şeyler olmamalı
 
 ![ı1ı1](https://github.com/user-attachments/assets/98d1c4ed-6728-4761-b873-b8842fe8c994)
--YENİ VERSİYON EKLENDİ
+
 # V2 - EKLENEN ÖZELLİKLER
 - Kadife ve denizkızı anahtarı tutma özelliği eklendi.
 - Artık kurbağa ve kadifeyi de kızartıyor.
@@ -115,6 +118,4 @@ Bilgisayarınızda aktif kullandığınız başka programlar yok ise sadece 2 Gh
 
 
 
-* **Ekranın yeri hiç kıpırdamamalı** ve **800x600** pencere modunda oynanmalı
-* Balıkçı karakterin hemen **arka kısımında** olmalı. Yani karakter geriye doğru gittiği zaman **mutlaka** karakterin kamera açısından balıkçı **görülmeli**
-* Haritalar veya herhangi karakterin chat veya isim kısmını kapatacak şeyler olmamalı
+
