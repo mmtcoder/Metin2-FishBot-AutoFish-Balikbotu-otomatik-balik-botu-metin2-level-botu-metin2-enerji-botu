@@ -117,6 +117,7 @@ Bilgisayarınızda aktif kullandığınız başka programlar yok ise sadece 2 Gh
 - 8.08.2024
 # v2.2
 - Sale Title(Yani sol altta çıkan nesne market eşya penceresi) açıkken hesabın donup kalması sorunu çözüldü ve sale ekranı kapatılıyor.
+- 9.09.2024
 
 
 
