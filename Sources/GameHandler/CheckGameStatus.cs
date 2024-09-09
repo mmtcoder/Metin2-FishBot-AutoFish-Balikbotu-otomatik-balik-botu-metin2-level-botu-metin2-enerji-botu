@@ -305,7 +305,7 @@ namespace MusicPlayerApp.Sources.GameHandler
             int[] targetSaleTitle = screenShot.ImageArraySpecifiedArea(coordinates.RectSaleCross());
 
             while(imageObjects.CompareTwoArrayAdvanced(imageObjects.arraySaleTitle,
-                targetSaleTitle,ImageSensibilityLevel.SENSIBILTY_HIGH)) 
+                targetSaleTitle,ImageSensibilityLevel.SENSIBILTY_MED)) 
             {
                 if(ThreadGlobals.CheckGameIsStopped() || ThreadGlobals.isPausedTheGame) return;
                 inputGame.MouseMoveAndPressLeft(coordinates.RectSaleCross().X,
