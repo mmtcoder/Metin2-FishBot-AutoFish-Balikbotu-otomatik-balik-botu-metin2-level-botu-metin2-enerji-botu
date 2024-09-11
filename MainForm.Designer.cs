@@ -130,6 +130,7 @@ namespace MusicPlayerApp
             this.checkBoxTelegram = new System.Windows.Forms.CheckBox();
             this.label12 = new System.Windows.Forms.Label();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.checkBoxPCSlow = new System.Windows.Forms.CheckBox();
             this.tabControlTelegram.SuspendLayout();
             this.tabPageFishing.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMainForm)).BeginInit();
@@ -154,6 +155,7 @@ namespace MusicPlayerApp
             // 
             // tabPageFishing
             // 
+            this.tabPageFishing.Controls.Add(this.checkBoxPCSlow);
             this.tabPageFishing.Controls.Add(this.checkBoxAdaptableFish);
             this.tabPageFishing.Controls.Add(this.checkBoxDeniz);
             this.tabPageFishing.Controls.Add(this.checkBoxWhisperActive);
@@ -1227,6 +1229,17 @@ namespace MusicPlayerApp
             this.label12.TabIndex = 0;
             this.label12.Text = "Telegram Bot Aktif Et";
             // 
+            // checkBoxPCSlow
+            // 
+            this.checkBoxPCSlow.AutoSize = true;
+            this.checkBoxPCSlow.Location = new System.Drawing.Point(374, 231);
+            this.checkBoxPCSlow.Name = "checkBoxPCSlow";
+            this.checkBoxPCSlow.Size = new System.Drawing.Size(87, 17);
+            this.checkBoxPCSlow.TabIndex = 57;
+            this.checkBoxPCSlow.Text = "PC Yavaşsa ";
+            this.checkBoxPCSlow.UseVisualStyleBackColor = true;
+            this.checkBoxPCSlow.CheckedChanged += new System.EventHandler(this.checkBoxPCSlow_CheckedChanged);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1349,6 +1362,7 @@ namespace MusicPlayerApp
         private System.Windows.Forms.CheckBox checkBoxDeniz;
         private System.Windows.Forms.CheckBox checkBoxAdaptableFish;
         private System.Windows.Forms.ToolTip toolTip;
+        private System.Windows.Forms.CheckBox checkBoxPCSlow;
     }
 }
 

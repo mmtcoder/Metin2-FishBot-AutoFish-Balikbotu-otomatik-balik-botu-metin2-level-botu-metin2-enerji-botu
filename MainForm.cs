@@ -934,6 +934,7 @@ namespace MusicPlayerApp
         private void InitializeToolTip()
         {
             toolTip.SetToolTip(checkBoxAdaptableFish, "Eğer haritada veya yakınınızda oyuncu var ise yavaş balık tutar");
+            toolTip.SetToolTip(checkBoxPCSlow, "Eğer Bilgisayarın çok yavaş ise balık tutmak yada enerji parçası için bu seçeneği tıkla");
         }
 
         private void checkBoxEnableTime_CheckedChanged_1(object sender, EventArgs e)
@@ -950,6 +951,18 @@ namespace MusicPlayerApp
             else
             {
                 ThreadGlobals.isAdaptableFishing = false;
+            }
+        }
+
+        private void checkBoxPCSlow_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBoxPCSlow.Checked)
+            {
+                TimerGame.IS_PC_SLOW = true;
+            }
+            else
+            {
+                TimerGame.IS_PC_SLOW = false;
             }
         }
     }
