@@ -118,6 +118,9 @@ Bilgisayarınızda aktif kullandığınız başka programlar yok ise sadece 2 Gh
 # v2.2
 - Sale Title(Yani sol altta çıkan nesne market eşya penceresi) açıkken hesabın donup kalması sorunu çözüldü ve sale ekranı kapatılıyor.
 - 9.09.2024
+- # v2.3
+- Çok yavaş bilgisayarlar için buton eklendi
+- 11.09.2024
 
 
 
