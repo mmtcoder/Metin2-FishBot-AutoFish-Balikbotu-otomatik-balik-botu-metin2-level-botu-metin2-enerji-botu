@@ -18,7 +18,7 @@ namespace MusicPlayerApp.Sources
 
         private static readonly float FAST_PC_CPU_MHZ = 150;
 
-        public static volatile bool IS_PC_SLOW = DecideSlowOrFastPC();
+        public static volatile bool IS_PC_SLOW = false;
 
         public static volatile int MIN_WORK_TIME = 0;
         public static volatile int MAX_WORK_TIME = 0;
