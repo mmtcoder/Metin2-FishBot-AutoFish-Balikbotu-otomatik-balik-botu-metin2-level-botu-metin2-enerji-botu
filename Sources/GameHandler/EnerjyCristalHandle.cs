@@ -394,7 +394,7 @@ namespace Metin2AutoFishCSharp.Sources.GameHandler
                             TimerGame.SleepRandom(300, 500);
                             inputGame.KeyRelease(KeyboardInput.ScanCodeShort.KEY_W);
 
-                            return CheckSilahciIsThere();
+                            return false;
                         }
 
                     }
@@ -443,7 +443,8 @@ namespace Metin2AutoFishCSharp.Sources.GameHandler
                         {
                             if(timerSilahBuyingProc.CheckDelayTimeInSecond(250))
                             {
-                                if (ThreadGlobals.CheckGameIsStopped() || !ThreadGlobals.isSettingButtonSeemed)
+                                if (ThreadGlobals.CheckGameIsStopped() || !ThreadGlobals.isSettingButtonSeemed
+                                    || ThreadGlobals.isCharKilled)
                                 {
                                     DebugPfCnsl.println("BuyKediIsirigi function is returned");
                                     return;
