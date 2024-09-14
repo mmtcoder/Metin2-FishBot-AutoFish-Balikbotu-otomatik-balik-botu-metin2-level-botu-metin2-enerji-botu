@@ -151,7 +151,7 @@ namespace Metin2AutoFishCSharp.Sources.GameHandler
                 {
                     for (int pageOne = 0; pageOne < firstPageKnives.Length; pageOne++)
                     {
-                        if (ThreadGlobals.CheckGameIsStopped())
+                        if (ThreadGlobals.CheckGameIsStopped() || ThreadGlobals.isCharKilled)
                         {
                             DebugPfCnsl.println("DragKediIsirigi is returned");
                             return;
@@ -179,7 +179,7 @@ namespace Metin2AutoFishCSharp.Sources.GameHandler
 
                         while (imageObjects.compareTwoArrayQuicklyBool(sourceSimyaciEvetWhite, targetSimyaciEvetWhite))
                         {
-                            if (ThreadGlobals.CheckGameIsStopped())
+                            if (ThreadGlobals.CheckGameIsStopped() || ThreadGlobals.isCharKilled)
                             {
                                 DebugPfCnsl.println("DragKediIsirigi is returned");
                                 return;
@@ -203,7 +203,8 @@ namespace Metin2AutoFishCSharp.Sources.GameHandler
                             Rectangle findSimyaci = FindSimyaciCoordinates();
                             while (findSimyaci == Rectangle.Empty)
                             {
-                                if (ThreadGlobals.CheckGameIsStopped() || !ThreadGlobals.isSettingButtonSeemed)
+                                if (ThreadGlobals.CheckGameIsStopped() || !ThreadGlobals.isSettingButtonSeemed || 
+                                    ThreadGlobals.isCharKilled)
                                 {
                                     DebugPfCnsl.println("DragKediIsirigi is returned");
                                     return;
@@ -235,7 +236,7 @@ namespace Metin2AutoFishCSharp.Sources.GameHandler
                 {
                     for (int pageTwo = 0; pageTwo < secondPageKnives.Length; pageTwo++)
                     {
-                        if (ThreadGlobals.CheckGameIsStopped())
+                        if (ThreadGlobals.CheckGameIsStopped() || ThreadGlobals.isCharKilled)
                         {
                             DebugPfCnsl.println("DragKediIsirigi is returned");
                             return;
@@ -260,7 +261,7 @@ namespace Metin2AutoFishCSharp.Sources.GameHandler
 
                         while (imageObjects.compareTwoArrayQuicklyBool(sourceSimyaciEvetWhite, targetSimyaciEvetWhite))
                         {
-                            if (ThreadGlobals.CheckGameIsStopped())
+                            if (ThreadGlobals.CheckGameIsStopped() || ThreadGlobals.isCharKilled)
                             {
                                 DebugPfCnsl.println("DragKediIsirigi is returned");
                                 return;
@@ -285,7 +286,8 @@ namespace Metin2AutoFishCSharp.Sources.GameHandler
                             Rectangle findSimyaci = FindSimyaciCoordinates();
                             while (findSimyaci == Rectangle.Empty)
                             {
-                                if (ThreadGlobals.CheckGameIsStopped() || !ThreadGlobals.isSettingButtonSeemed)
+                                if (ThreadGlobals.CheckGameIsStopped() || !ThreadGlobals.isSettingButtonSeemed
+                                    || ThreadGlobals.isCharKilled)
                                 {
                                     DebugPfCnsl.println("DragKediIsirigi is returned");
                                     return;
@@ -372,7 +374,8 @@ namespace Metin2AutoFishCSharp.Sources.GameHandler
                             //  DebugPfCnsl.println("Elapsed 222  Time = " + watch.ElapsedMilliseconds);
                             while (!CheckSilahciShopPage())
                             {
-                                if (ThreadGlobals.isEnergyCristalStopped || !ThreadGlobals.isSettingButtonSeemed)
+                                if (ThreadGlobals.isEnergyCristalStopped || !ThreadGlobals.isSettingButtonSeemed
+                                    || ThreadGlobals.isCharKilled)
                                 {
                                     ThreadGlobals.DebugThreadGloablValues();
                                     return false;
@@ -523,7 +526,7 @@ namespace Metin2AutoFishCSharp.Sources.GameHandler
                         }
 
                         DebugPfCnsl.println("You need to sell them !!");
-                        TelegramBot.SendMessageTelegram("Karakterde envanteri full dolu boşalt köle");
+                        TelegramBot.SendMessageTelegram("Karakterde envanter full dolu boşalt köle");
 
                         charThings.OpenCloseInventory(true);
                         charThings.OpenCloseInventory(false);

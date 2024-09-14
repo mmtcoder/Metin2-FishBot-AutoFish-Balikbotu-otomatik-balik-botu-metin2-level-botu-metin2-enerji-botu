@@ -58,7 +58,8 @@ namespace Metin2AutoFishCSharp.Sources.CharacterHandle
         /// <returns></returns>
         public bool MoveCharWithMouseClick(Point pointPath)
         {
-            if (ThreadGlobals.CheckGameIsStopped() || !ThreadGlobals.isSettingButtonSeemed)
+            if (ThreadGlobals.CheckGameIsStopped() || !ThreadGlobals.isSettingButtonSeemed ||
+                ThreadGlobals.isCharKilled)
             {
                 DebugPfCnsl.println("MoveCharWithMouseClick function is returned");
                 return false; 
@@ -168,7 +169,8 @@ namespace Metin2AutoFishCSharp.Sources.CharacterHandle
 
         public bool StartTravelling(Point[] pointsDestination )
         {
-            if(ThreadGlobals.CheckGameIsStopped() || !ThreadGlobals.isSettingButtonSeemed)
+            if(ThreadGlobals.CheckGameIsStopped() || !ThreadGlobals.isSettingButtonSeemed
+                || ThreadGlobals.isCharKilled)
             {
                 DebugPfCnsl.println("StartTravelling is returned");
                 return false;
@@ -208,12 +210,13 @@ namespace Metin2AutoFishCSharp.Sources.CharacterHandle
                             {
                                 while (!MoveCharWithMouseClick(pointsDestination[rotation]))
                                 {
-                                    if (ThreadGlobals.CheckGameIsStopped() || !ThreadGlobals.isSettingButtonSeemed)
+                                    if (ThreadGlobals.CheckGameIsStopped() || !ThreadGlobals.isSettingButtonSeemed
+                                        || ThreadGlobals.isCharKilled)
                                     {
                                         DebugPfCnsl.println("StartTravelling is returned");
                                         return false;
                                     }
-                                    if(!timerRotationControl.CheckDelayTimeInSecond(20))
+                                    if(!timerRotationControl.CheckDelayTimeInSecond(30))
                                     {
                                         charThings.OpenCloseInventory(true);
                                         charThings.OpenCloseInventory(false);
@@ -244,12 +247,13 @@ namespace Metin2AutoFishCSharp.Sources.CharacterHandle
                     {
                         while (!MoveCharWithMouseClick(pointsDestination[comparision]))
                         {
-                            if (ThreadGlobals.CheckGameIsStopped() || !ThreadGlobals.isSettingButtonSeemed)
+                            if (ThreadGlobals.CheckGameIsStopped() || !ThreadGlobals.isSettingButtonSeemed
+                                || ThreadGlobals.isCharKilled)
                             {
                                 DebugPfCnsl.println("StartTravelling is returned");
                                 return false;
                             }
-                            if (!timerRotationControl.CheckDelayTimeInSecond(20))
+                            if (!timerRotationControl.CheckDelayTimeInSecond(30))
                             {
                                 charThings.OpenCloseInventory(true);
                                 charThings.OpenCloseInventory(false);
@@ -288,7 +292,8 @@ namespace Metin2AutoFishCSharp.Sources.CharacterHandle
             inputs.MouseMove(coor.PointMiniMapCharSymbol().X, coor.PointMiniMapCharSymbol().Y);
 
             Point pointResult = Point.Empty;
-            if (ThreadGlobals.isEnergyCristalStopped || !ThreadGlobals.isSettingButtonSeemed)
+            if (ThreadGlobals.isEnergyCristalStopped || !ThreadGlobals.isSettingButtonSeemed
+                || ThreadGlobals.isCharKilled)
             {
                 DebugPfCnsl.println("ReadMiniMapCoordinates is returned");
                 return Point.Empty;

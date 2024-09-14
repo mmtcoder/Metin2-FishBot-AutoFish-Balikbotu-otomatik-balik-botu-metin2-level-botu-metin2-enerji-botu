@@ -266,6 +266,7 @@ namespace MusicPlayerApp.Sources.GameHandler
             if (ThreadGlobals.CheckGameIsStopped() || ThreadGlobals.isPausedTheGame) return;
 
             TimerGame timeGame = new TimerGame();
+            TimerGame timeAlertUser = new TimerGame();
 
             int randomChannelValue = TimerGame.MakeRandomValue(0, 4);
 
@@ -294,6 +295,11 @@ namespace MusicPlayerApp.Sources.GameHandler
 
                 }
                
+                if(!timeAlertUser.CheckDelayTimeInSecond(30))
+                {
+                    TelegramBot.SendMessageTelegram("30 saniyeden beri giriş ekranında duruyor.Kontrol et");
+                    timeAlertUser.SetStartedSecondTime();
+                }
             }
 
             ThreadGlobals.isEntryScreenActive = false;

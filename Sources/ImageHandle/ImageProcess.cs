@@ -239,8 +239,8 @@ namespace MusicPlayerApp.Sources.ImageHandle
 
                         }
 
-                        if (Math.Abs(arrayColorRed[0] - arrayColorRed[1]) < 4 && Math.Abs(arrayColorGreen[0] - arrayColorGreen[1]) < 4
-                                && Math.Abs(arrayColorBlue[0] - arrayColorBlue[1]) < 4)
+                        if (Math.Abs(arrayColorRed[0] - arrayColorRed[1]) < 5 && Math.Abs(arrayColorGreen[0] - arrayColorGreen[1]) < 5
+                                && Math.Abs(arrayColorBlue[0] - arrayColorBlue[1]) < 5)
                         {
                             // System.out.println("22array color 0 = " + arrayColorRed[0] + " 22 array color 1 = " + arrayColorRed[1]);
                             // System.out.println("index num =  " + i + " return false ");
