@@ -242,7 +242,7 @@ namespace Metin2AutoFishCSharp.Sources.GameHandler
                                
                             }
 
-                            
+                            DragKediIsirigi(simyaciPlace);
                             return;
                         }
                         TimerGame.SleepRandom(200, 300);
@@ -346,7 +346,7 @@ namespace Metin2AutoFishCSharp.Sources.GameHandler
 
                             }
 
-                            
+                            DragKediIsirigi(simyaciPlace);
                             return;
                         }
                         TimerGame.SleepRandom(200, 300);
