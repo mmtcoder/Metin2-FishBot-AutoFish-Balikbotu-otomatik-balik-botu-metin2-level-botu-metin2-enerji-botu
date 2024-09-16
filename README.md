@@ -25,8 +25,7 @@ Telegram Hariç harf sayı tespit,nesne tespit vb. algoritmaların hepsi **bana 
 > Eğer karakter birileri ile yazışmış ise **ChatResources/ChatQuestionAnswer/ChatQuestAnswer.txt** ve
 > **ChatResources/ChatQuestionAnswer/RecordWhisperChat.txt** dosyasından inceleyebilir
 > ve çekilen screen shot dosyalarını **ScreenShot** dosyasından inceleyebilirsin.
-> Birde **Ctrl + O** kombinasyonlarını yada **Telegram aktif ettikten** sonra
-> **Durdur** mesajı ile programı durdurabilirsin
+> Birde **Ctrl + O** kombinasyonlarını ile programı durdurabilirsin
 
 
 
