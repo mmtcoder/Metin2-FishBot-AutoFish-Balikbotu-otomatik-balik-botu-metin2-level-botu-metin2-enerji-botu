@@ -175,8 +175,27 @@ namespace Metin2AutoFishCSharp.Sources.GameHandler
                         bool[] targetSimyaciEvetWhite = imageObjects.RecordWantedColorAsBool(ColorGame.CHAT_WHITE_COLOR,
                             screenShot.ImageArraySpecifiedArea(coordinate.RectSimyaciEvetButton()));
 
-                        
-
+                        TimerGame timerSettingButtonDetect = new TimerGame();
+                        //Çift kontrol yapıyoruz. Burada setting buton tespit edilemez ise simyacı ekranı
+                        //çıkmış demektir
+                        while(imageObjects.CompareTwoArrayAdvanced(imageObjects.arraySettingButton,
+                            screenShot.ImageArraySpecifiedArea(coordinate.RectSettingButton()),ImageSensibilityLevel.SENSIBILTY_HIGH))
+                        {
+                            if(timerSettingButtonDetect.CheckDelayTimeInSecond(3))
+                            {
+                                if (ThreadGlobals.CheckGameIsStopped() || ThreadGlobals.isCharKilled)
+                                {
+                                    DebugPfCnsl.println("DragKediIsirigi is returned");
+                                    return;
+                                }
+                            }
+                            else
+                            {
+                                break;
+                            }
+                            
+                        }
+                        //Burada ise evet hayır simyacı ekranı gelip gelmediğini kontrol ediyoruz
                         while (imageObjects.compareTwoArrayQuicklyBool(sourceSimyaciEvetWhite, targetSimyaciEvetWhite))
                         {
                             if (ThreadGlobals.CheckGameIsStopped() || ThreadGlobals.isCharKilled)
@@ -192,6 +211,8 @@ namespace Metin2AutoFishCSharp.Sources.GameHandler
                         }
                         //Sürükleme yaparken karakterin yapamamış ve yönü kaymış olmalı
                         //bu yüzden tekrar simyacıya gidip onu bulması lazım
+                        //Burada eğer kedi ısırığı bıçağı envanterden eksilmemiş ise sürükleme başarısız
+                        //anlamına gelir ve diğer işlemler yapılır
                         if (imageObjects.CompareTwoArrayAdvanced(imageObjects.arrayKediIsirigi,
                             screenShot.ImageArraySpecifiedArea(firstPageKnives[pageOne]),
                             ImageSensibilityLevel.SENSIBILTY_HIGH))
@@ -221,7 +242,7 @@ namespace Metin2AutoFishCSharp.Sources.GameHandler
                                
                             }
 
-                            DragKediIsirigi(findSimyaci);
+                            
                             return;
                         }
                         TimerGame.SleepRandom(200, 300);
@@ -259,6 +280,27 @@ namespace Metin2AutoFishCSharp.Sources.GameHandler
                         bool[] targetSimyaciEvetWhite = imageObjects.RecordWantedColorAsBool(ColorGame.CHAT_WHITE_COLOR,
                             screenShot.ImageArraySpecifiedArea(coordinate.RectSimyaciEvetButton()));
 
+                        TimerGame timerSettingButtonDetect = new TimerGame();
+                        //Çift kontrol yapıyoruz. Burada setting buton tespit edilemez ise simyacı ekranı
+                        //çıkmış demektir
+                        while (imageObjects.CompareTwoArrayAdvanced(imageObjects.arraySettingButton,
+                            screenShot.ImageArraySpecifiedArea(coordinate.RectSettingButton()), ImageSensibilityLevel.SENSIBILTY_HIGH))
+                        {
+                            if (timerSettingButtonDetect.CheckDelayTimeInSecond(3))
+                            {
+                                if (ThreadGlobals.CheckGameIsStopped() || ThreadGlobals.isCharKilled)
+                                {
+                                    DebugPfCnsl.println("DragKediIsirigi is returned");
+                                    return;
+                                }
+                            }
+                            else
+                            {
+                                break;
+                            }
+
+                        }
+                        //Burada ise evet hayır simyacı ekranı gelip gelmediğini kontrol ediyoruz
                         while (imageObjects.compareTwoArrayQuicklyBool(sourceSimyaciEvetWhite, targetSimyaciEvetWhite))
                         {
                             if (ThreadGlobals.CheckGameIsStopped() || ThreadGlobals.isCharKilled)
@@ -304,7 +346,7 @@ namespace Metin2AutoFishCSharp.Sources.GameHandler
 
                             }
 
-                            DragKediIsirigi(findSimyaci);
+                            
                             return;
                         }
                         TimerGame.SleepRandom(200, 300);
