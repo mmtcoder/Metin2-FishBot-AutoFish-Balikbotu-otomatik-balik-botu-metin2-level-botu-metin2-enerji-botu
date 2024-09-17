@@ -163,11 +163,27 @@ namespace Metin2AutoFishCSharp.Sources.GameHandler
                         inputGame.MouseMoveAndPressLeft(firstPageKnives[pageOne].X + firstPageKnives[pageOne].Width / 2,
                             firstPageKnives[pageOne].Y + firstPageKnives[pageOne].Height / 2);
 
-                        TimerGame.SleepRandom(30, 45);
+                        if(TimerGame.IS_PC_SLOW)
+                        {
+                            TimerGame.SleepRandom(50, 70);
+                        }
+                        else
+                        {
+                            TimerGame.SleepRandom(30, 45);
+                        }
+                        
                         inputGame.MouseMoveAndPressLeft(simyaciPlace.X + simyaciPlace.Width / 2,
                             simyaciPlace.Y + simyaciPlace.Height + 5);
 
-                        TimerGame.SleepRandom(200, 300);
+                        if(TimerGame.IS_PC_SLOW)
+                        {
+                            TimerGame.SleepRandom(400, 450);
+                        }
+                        else
+                        {
+                            TimerGame.SleepRandom(200, 300);
+                        }
+                        
 
                         bool[] sourceSimyaciEvetWhite = imageObjects.RecordWantedColorAsBool(ColorGame.CHAT_WHITE_COLOR,
                             imageObjects.arraySimyaciEvetOptionPage);
@@ -205,7 +221,15 @@ namespace Metin2AutoFishCSharp.Sources.GameHandler
                             }
                             inputGame.KeyPress(KeyboardInput.ScanCodeShort.ENTER);
 
-                            TimerGame.SleepRandom(200, 300);
+                            if(TimerGame.IS_PC_SLOW)
+                            {
+                                TimerGame.SleepRandom(400, 500);
+                            }
+                            else
+                            {
+                                TimerGame.SleepRandom(200, 300);
+                            }
+                            
                             targetSimyaciEvetWhite = imageObjects.RecordWantedColorAsBool(ColorGame.CHAT_WHITE_COLOR,
                             screenShot.ImageArraySpecifiedArea(coordinate.RectSimyaciEvetButton()));
                         }
@@ -245,7 +269,14 @@ namespace Metin2AutoFishCSharp.Sources.GameHandler
                             DragKediIsirigi(findSimyaci);
                             return;
                         }
-                        TimerGame.SleepRandom(200, 300);
+                        if (TimerGame.IS_PC_SLOW)
+                        {
+                            TimerGame.SleepRandom(400, 500);
+                        }
+                        else
+                        {
+                            TimerGame.SleepRandom(200, 300);
+                        }
                         inputGame.KeyPress(KeyboardInput.ScanCodeShort.ESCAPE);
 
                     }
@@ -268,11 +299,27 @@ namespace Metin2AutoFishCSharp.Sources.GameHandler
 
                         inputGame.MouseMoveAndPressLeft(secondPageKnives[pageTwo].X + secondPageKnives[pageTwo].Width / 2,
                             secondPageKnives[pageTwo].Y + secondPageKnives[pageTwo].Height / 2);
-                        TimerGame.SleepRandom(20, 30);
+
+                        if (TimerGame.IS_PC_SLOW)
+                        {
+                            TimerGame.SleepRandom(50, 70);
+                        }
+                        else
+                        {
+                            TimerGame.SleepRandom(30, 45);
+                        }
+
                         inputGame.MouseMoveAndPressLeft(simyaciPlace.X + simyaciPlace.Width / 2,
                             simyaciPlace.Y + simyaciPlace.Height + 5);
 
-                        TimerGame.SleepRandom(200, 300);
+                        if (TimerGame.IS_PC_SLOW)
+                        {
+                            TimerGame.SleepRandom(400, 450);
+                        }
+                        else
+                        {
+                            TimerGame.SleepRandom(200, 300);
+                        }
 
                         bool[] sourceSimyaciEvetWhite = imageObjects.RecordWantedColorAsBool(ColorGame.CHAT_WHITE_COLOR,
                             imageObjects.arraySimyaciEvetOptionPage);
@@ -310,7 +357,15 @@ namespace Metin2AutoFishCSharp.Sources.GameHandler
                             }
                             inputGame.KeyPress(KeyboardInput.ScanCodeShort.ENTER);
 
-                            TimerGame.SleepRandom(200, 300);
+                            if (TimerGame.IS_PC_SLOW)
+                            {
+                                TimerGame.SleepRandom(400, 500);
+                            }
+                            else
+                            {
+                                TimerGame.SleepRandom(200, 300);
+                            }
+
                             targetSimyaciEvetWhite = imageObjects.RecordWantedColorAsBool(ColorGame.CHAT_WHITE_COLOR,
                             screenShot.ImageArraySpecifiedArea(coordinate.RectSimyaciEvetButton()));
                         }
@@ -349,7 +404,15 @@ namespace Metin2AutoFishCSharp.Sources.GameHandler
                             DragKediIsirigi(findSimyaci);
                             return;
                         }
-                        TimerGame.SleepRandom(200, 300);
+                        
+                        if(TimerGame.IS_PC_SLOW)
+                        {
+                            TimerGame.SleepRandom(400, 500);
+                        }
+                        else
+                        {
+                            TimerGame.SleepRandom(200, 300);
+                        }
                         inputGame.KeyPress(KeyboardInput.ScanCodeShort.ESCAPE);
 
                     }
