@@ -156,10 +156,7 @@ namespace Metin2AutoFishCSharp.Sources.CharacterHandle
                // DebugPfCnsl.println("tıklanan nokta = " + pointMouseClick.ToString());
                 inputs.MouseMoveAndPressLeft(pointMouseClick.X, pointMouseClick.Y);
 
-                if(!TimerGame.IS_PC_SLOW)
-                {
-                    TimerGame.SleepRandom(100, 150);
-                }
+               
                 
                 return false;
             }
