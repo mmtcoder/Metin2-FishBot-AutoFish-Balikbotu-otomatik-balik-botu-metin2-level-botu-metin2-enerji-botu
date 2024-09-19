@@ -20,7 +20,7 @@ namespace Metin2AutoFishCSharp.Sources
     internal class TelegramBot
     {
 
-        private readonly string telegramToken = "7460110010:AAEN4uj5bXfnRogkepLPusqHLe13KI1tInk";
+        private readonly string telegramToken = "";
 
         public static Message TELEGRAM_SEND_MESSAGE = null;
 
