@@ -62,6 +62,7 @@ namespace Metin2AutoFishCSharp.Sources.GameHandler
                 // charMove.StartTravelling(silahciToSimyaci);
                 charThings.ProvideCharNameCanSee();
                 charMove.StartTravelling(simyaciToSilahci);
+                inputGame.KeyPress(KeyboardInput.ScanCodeShort.KEY_W);
                 if (CheckSilahciIsThere())
                 {
                     BuyKediIsirigi();
