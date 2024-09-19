@@ -69,15 +69,24 @@ namespace Metin2AutoFishCSharp.Sources.GameHandler
                     charMove.StartTravelling(silahciToSimyaci);
 
                     Rectangle findedSimyaci = FindSimyaciCoordinates();
+                    TimerGame timerFindSimyaci = new TimerGame();
 
                     while (findedSimyaci == Rectangle.Empty)
                     {
-                        if (ThreadGlobals.CheckGameIsStopped() || !ThreadGlobals.isSettingButtonSeemed)
+                        if(timerFindSimyaci.CheckDelayTimeInSecond(15))
                         {
-                            return;
+                            if (ThreadGlobals.CheckGameIsStopped() || !ThreadGlobals.isSettingButtonSeemed)
+                            {
+                                return;
+                            }
+                            inputGame.KeyPress(KeyboardInput.ScanCodeShort.ESCAPE);
+                            findedSimyaci = FindSimyaciCoordinates();
                         }
-                        inputGame.KeyPress(KeyboardInput.ScanCodeShort.ESCAPE);
-                        findedSimyaci = FindSimyaciCoordinates();
+                        else
+                        {
+                            break;
+                        }
+                       
                     }
 
                     DragKediIsirigi(findedSimyaci);
