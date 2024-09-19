@@ -213,7 +213,7 @@ namespace Metin2AutoFishCSharp.Sources.CharacterHandle
                                         DebugPfCnsl.println("StartTravelling is returned");
                                         return false;
                                     }
-                                    if(!timerRotationControl.CheckDelayTimeInSecond(30))
+                                    if(!timerRotationControl.CheckDelayTimeInSecond(20))
                                     {
                                         charThings.OpenCloseInventory(true);
                                         charThings.OpenCloseInventory(false);
@@ -228,11 +228,12 @@ namespace Metin2AutoFishCSharp.Sources.CharacterHandle
                                             }
                                         }
                                         TimerGame.SleepRandom(3000, 4000);
+                                        timerRotationControl.SetStartedSecondTime();
 
-                                        
                                     }
+                                    
                                 }
-                                timerRotationControl.SetStartedSecondTime();
+                                
                             }
                             DebugPfCnsl.println("bütün hedefler başarı ile tamamlanmıştır.");
                             //bütün hedefler başarı ile tamamlanmıştır.
