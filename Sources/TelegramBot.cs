@@ -1,5 +1,6 @@
 ﻿using MusicPlayerApp.Debugs;
 using MusicPlayerApp.Sources;
+using MusicPlayerApp.Sources.CharacterHandle;
 using MusicPlayerApp.Sources.ImageHandle;
 using System;
 using System.Collections.Generic;
@@ -121,13 +122,22 @@ namespace Metin2AutoFishCSharp.Sources
             {
                 if (TELEGRAM_SEND_MESSAGE != null)
                 {
-                   // Bitmap image = screenShot.CaptureSpecifiedScreen(new Rectangle(0,0,500,500));
-                   // FileHandler.SaveImageAsPng(image,"testimage.png",PathWayStruct.PATH_SCREENSHOTS);
+                    // Bitmap image = screenShot.CaptureSpecifiedScreen(new Rectangle(0,0,500,500));
+                    // FileHandler.SaveImageAsPng(image,"testimage.png",PathWayStruct.PATH_SCREENSHOTS);
 
-                   // string path = FileHandler.ReturnOrFindPathWay("testimage.png", PathWayStruct.PATH_SCREENSHOTS, ReturOrFind.RETURN_PATH);
-                  //  await botClient.SendPhotoAsync(TELEGRAM_SEND_MESSAGE.Chat.Id, InputFile.FromFileId(path));
+                    // string path = FileHandler.ReturnOrFindPathWay("testimage.png", PathWayStruct.PATH_SCREENSHOTS, ReturOrFind.RETURN_PATH);
+                    //  await botClient.SendPhotoAsync(TELEGRAM_SEND_MESSAGE.Chat.Id, InputFile.FromFileId(path));
 
-                    await botClient.SendTextMessageAsync(TELEGRAM_SEND_MESSAGE.Chat.Id, text);
+                    string fullText;
+                    if (CharInfo.CharNameString != string.Empty)
+                    {
+                        fullText = text + " Karakter ismi = " + CharInfo.CharNameString;
+                    }else
+                    {
+                        fullText= text;
+                    }
+
+                    await botClient.SendTextMessageAsync(TELEGRAM_SEND_MESSAGE.Chat.Id, fullText);
 
                 }
                 else
