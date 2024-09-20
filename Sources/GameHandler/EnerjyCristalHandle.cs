@@ -84,6 +84,19 @@ namespace Metin2AutoFishCSharp.Sources.GameHandler
                         }
                         else
                         {
+                            charThings.OpenCloseInventory(true);
+                            charThings.OpenCloseInventory(false);
+                            charThings.SettingButtonClick(SettingButtonPrefers.EXIT_BUTTON);
+
+                            while (!ThreadGlobals.CanEnergyCristalRightNow())
+                            {
+                                if (ThreadGlobals.CheckGameIsStopped())
+                                {
+                                    DebugPfCnsl.println("Find simyaci is returned");
+                                    return;
+                                }
+                            }
+                            TimerGame.SleepRandom(3000, 4000);
                             break;
                         }
                        
