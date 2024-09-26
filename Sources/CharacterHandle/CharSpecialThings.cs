@@ -273,7 +273,8 @@ namespace MusicPlayerApp.Sources.CharacterHandle
             OpenCloseSettingButton(false);
             if(page == InventoryPage.Page_1)
             {
-                if ((ThreadGlobals.CheckGameIsStopped() || !ThreadGlobals.isSettingButtonSeemed))
+                if ((ThreadGlobals.CheckGameIsStopped() || !ThreadGlobals.isSettingButtonSeemed)
+                    || ThreadGlobals.isCharKilled)
                 {
                     DebugPfCnsl.println("ClickWantedInventoryPage is returned");
                     return;
@@ -284,7 +285,8 @@ namespace MusicPlayerApp.Sources.CharacterHandle
             }
             else if(page == InventoryPage.Page_2) 
             {
-                if ((ThreadGlobals.CheckGameIsStopped() || !ThreadGlobals.isSettingButtonSeemed))
+                if ((ThreadGlobals.CheckGameIsStopped() || !ThreadGlobals.isSettingButtonSeemed)
+                    || ThreadGlobals.isCharKilled)
                 {
                     DebugPfCnsl.println("ClickWantedInventoryPage is returned");
                     return;

@@ -242,8 +242,8 @@ namespace Metin2AutoFishCSharp.Sources.ChatHandler
         /// area </returns>
         public string ParseAlphabetFromWord(bool[] scannedWord, Rectangle rectScannedWord)
         {
-            //  int index = 0;
-            // int index2 = 0;
+            // int index = 0;
+             //int index2 = 0;
            /* if(.Length != rectScannedWord.Width * rectScannedWord.Height)
             {
                 throw new ArgumentException("scannedWord length must be equalt to rectScannedWord widht * height");
@@ -264,7 +264,7 @@ namespace Metin2AutoFishCSharp.Sources.ChatHandler
             bool[] cropBool = imageproc.ClipBoolArray(scannedWord, rectScannedWord, rectDetectAlpArea);
           
             //FileHandler.SaveImageAsPng(screenshot.CaptureSpecifiedScreen(rectDetectAlpArea), "makarati" +
-           //      index2++ + ".png", PathWayStruct.PATH_TESTIMAGES);
+                // index2++ + ".png", PathWayStruct.PATH_TESTIMAGES);
           //  Console.WriteLine("rectDetectAlpArea result = " + rectDetectAlpArea.ToString());
                    
            
@@ -275,8 +275,8 @@ namespace Metin2AutoFishCSharp.Sources.ChatHandler
                 //Rectangle resultRectAlp = DetectAlphabet(cropBool, rectDetectAlpArea);
                 Rectangle resultRectAlp = DetectAlphaberV2(cropBool, rectDetectAlpArea);
              
-               // FileHandler.SaveImageAsPng(screenshot.CaptureSpecifiedScreen(resultRectAlp), "test" +
-                //    index++ + ".png", PathWayStruct.PATH_TESTIMAGES);
+                //FileHandler.SaveImageAsPng(screenshot.CaptureSpecifiedScreen(resultRectAlp), "test" +
+                 //   index++ + ".png", PathWayStruct.PATH_TESTIMAGES);
 
                //  Console.WriteLine("resultRectAlp result = " + resultRectAlp.ToString());
 
@@ -287,7 +287,7 @@ namespace Metin2AutoFishCSharp.Sources.ChatHandler
                                          , 12, rectScannedWord.Height);
 
                    // FileHandler.SaveImageAsPng(screenshot.CaptureSpecifiedScreen(rectDetectAlpArea), "makarati" +
-                 // index2++ + ".png", PathWayStruct.PATH_TESTIMAGES);
+                  //index2++ + ".png", PathWayStruct.PATH_TESTIMAGES);
                   // Console.WriteLine("rectDetectAlpArea result = " + rectDetectAlpArea.ToString());
                      
                  }
@@ -299,8 +299,8 @@ namespace Metin2AutoFishCSharp.Sources.ChatHandler
                                       , rectScannedWord.Width - (resultRectAlp.X - rectScannedWord.X + resultRectAlp.Width), rectScannedWord.Height);
                        
                         //Console.WriteLine("rectDetectAlpArea else result = " + rectDetectAlpArea.ToString());
-                      //  FileHandler.SaveImageAsPng(screenshot.CaptureSpecifiedScreen(rectDetectAlpArea), "makarati" +
-                    // index2++ + ".png", PathWayStruct.PATH_TESTIMAGES);
+                       // FileHandler.SaveImageAsPng(screenshot.CaptureSpecifiedScreen(rectDetectAlpArea), "makarati" +
+                     //index2++ + ".png", PathWayStruct.PATH_TESTIMAGES);
                         // DebugDrawingHandle.DrawWantedObjectToScreen(rectAlphabet);
                         // Thread.Sleep(2000);
                     }
