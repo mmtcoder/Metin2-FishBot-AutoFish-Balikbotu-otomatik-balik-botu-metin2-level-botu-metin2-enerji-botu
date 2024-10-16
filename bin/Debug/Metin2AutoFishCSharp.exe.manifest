@@ -61,7 +61,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>MaxZxKq4yv2YS74uBs1HRyyQsljkFY1UNXk76aKn/HA=</dsig:DigestValue>
+        <dsig:DigestValue>xx6gAIN6EnhlXmWILSKeGi8VN50A8ITNGqYI147h3Ek=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1088,13 +1088,13 @@
       <dsig:DigestValue>NCuHsGRCoLT2j4QqDg9Ylw3JiqWmlbF7hK+J+AHaNjU=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Images\charButton.png" size="352">
+  <file name="Images\charButton.png" size="221">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>z/n1KUPcukY+s3WrqY+EPhXF2SIUhCYBMWF49EsiV4M=</dsig:DigestValue>
+      <dsig:DigestValue>oCpUBOiEUpZRFny9KtX8Vw5pqWvoxfFwHCgdyPRhos0=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Images\charScreen.png" size="249">
@@ -1142,13 +1142,13 @@
       <dsig:DigestValue>KPsUAvWziRtDk5C53pgGFJDZTR7MTzqfottyuqHYM5k=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Images\entryScreen.png" size="200">
+  <file name="Images\entryScreen.png" size="139">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>sAj7Z/G43O+snR+gVI1FUkW7Y3bviZ6iptTCh6sGwgI=</dsig:DigestValue>
+      <dsig:DigestValue>Pvsnn8Sx+4TQa5w3BIgRZkenXmvIXo4whqpf0PcvPT4=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Images\firstSkillSlotEmpty.png" size="665">
