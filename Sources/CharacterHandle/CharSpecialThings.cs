@@ -111,6 +111,9 @@ namespace MusicPlayerApp.Sources.CharacterHandle
                     return; 
                 } 
                 inputGame.MouseMoveAndPressLeft(coor.RectSettingButton().X, coor.RectSettingButton().Y);
+                inputGame.MouseMove(coor.RectSettingButton().X -200 ,
+                    coor.RectSettingButton().Y);
+
                 targetCharButton = screenshot.ImageArraySpecifiedArea(coor.RectCharButton());
             }
         }
@@ -218,6 +221,7 @@ namespace MusicPlayerApp.Sources.CharacterHandle
                     ThreadGlobals.isCharScreenActive = true;
                     inputGame.MouseMove(coor.RectCharButton().X, coor.RectCharButton().Y);
                     inputGame.MouseClick(0, 0);
+
                     int[] targetCharScreen = screenshot.ImageArraySpecifiedArea(coor.RectCharScreen());
 
                     while (!imageObject.CompareTwoArrayAdvanced(imageObject.arrayCharScreen, targetCharScreen,
