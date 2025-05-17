@@ -87,6 +87,7 @@ namespace MusicPlayerApp
             LoadComboBox();
             LoadCheckBoxes();
             EnableOrDisableTimerCheckBox(false);
+            VersionChecker.CheckForUpdate();
 
         }
 
