@@ -61,7 +61,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>IR6RFBe7jZQQZda5nymyVxBqOwoEimvU4/LMLE/kc3I=</dsig:DigestValue>
+        <dsig:DigestValue>CH0oMsSHQrElEpjvOj26J12ImQsvIa/JeUoV/l/Pi1Q=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1142,13 +1142,13 @@
       <dsig:DigestValue>KPsUAvWziRtDk5C53pgGFJDZTR7MTzqfottyuqHYM5k=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Images\entryScreen.png" size="139">
+  <file name="Images\entryScreen.png" size="200">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Pvsnn8Sx+4TQa5w3BIgRZkenXmvIXo4whqpf0PcvPT4=</dsig:DigestValue>
+      <dsig:DigestValue>g8kxRl0nnJDGiMb9jPt6QiKqj1HToIsK6dRkkB4c2ok=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Images\firstSkillSlotEmpty.png" size="665">
@@ -1448,13 +1448,13 @@
       <dsig:DigestValue>OeQRvJtezun9NJveG3eOr3rEsGeE8b7c8SElkJ228DI=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Images\silahciOptionPage.png" size="402">
+  <file name="Images\silahciOptionPage.png" size="392">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>NxIwIEPCHZuj4GG7uM3abJaLxcnWdFt9Iya4pAvOkys=</dsig:DigestValue>
+      <dsig:DigestValue>mkkJD171toSxD8p9OO4ufLBYAJzpOov0HEnvuV3nrfc=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Images\silahciShop.png" size="481">
