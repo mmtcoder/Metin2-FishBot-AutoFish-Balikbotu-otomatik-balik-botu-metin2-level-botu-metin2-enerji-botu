@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 public static class VersionChecker
 {
-    private static readonly string CurrentVersion = "1.0.0";
+    private static readonly string CurrentVersion = "1.0.1";
     private static readonly string VersionUrl = "https://raw.githubusercontent.com/mmtcoder/Metin2-FishBot-AutoFish-Balikbotu-otomatik-balik-botu-metin2-level-botu-metin2-enerji-botu/main/version.txt";
     private static readonly string UpdatePageUrl = "https://github.com/mmtcoder/Metin2-FishBot-AutoFish-Balikbotu-otomatik-balik-botu-metin2-level-botu-metin2-enerji-botu";
 
