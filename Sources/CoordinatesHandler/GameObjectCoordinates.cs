@@ -60,7 +60,7 @@ namespace MusicPlayerApp.Sources
         {
             Point currentMetin2Icon = CheckGameScreenPlace();
             return new Rectangle(246 + currentMetin2Icon.X, 122 + currentMetin2Icon.Y, 10, 2);
-        }
+        }//246 122 10 2
 
         public Rectangle RectCharScreen()
         {
@@ -71,7 +71,8 @@ namespace MusicPlayerApp.Sources
         public Rectangle RectCharButton()
         {
             Point currentMetin2Icon = CheckGameScreenPlace();
-            return new Rectangle(362 +currentMetin2Icon.X, 365 + currentMetin2Icon.Y, 20, 11);
+            //return new Rectangle(362 +currentMetin2Icon.X, 365 + currentMetin2Icon.Y, 20, 11);
+            return new Rectangle(364 + currentMetin2Icon.X, 350 + currentMetin2Icon.Y, 11, 8);
         }
 
         public Rectangle RectDieScreen()
@@ -298,7 +299,8 @@ namespace MusicPlayerApp.Sources
         public Rectangle RectSilahciOptionMarketiAc()
         {
             Point currentMetin2Icon = CheckGameScreenPlace();
-            return new Rectangle(387 + currentMetin2Icon.X, 249 + currentMetin2Icon.Y, 19, 8);          
+           // return new Rectangle(387 + currentMetin2Icon.X, 249 + currentMetin2Icon.Y, 19, 8);          
+            return new Rectangle(385 + currentMetin2Icon.X, 217 + currentMetin2Icon.Y, 19, 8);          
         }
         public Rectangle RectSilahciShopPage()
         {
@@ -454,7 +456,8 @@ namespace MusicPlayerApp.Sources
         public Point PointExitButton()
         {
             Point currentMetin2Icon = CheckGameScreenPlace();
-            return new Point(405 + currentMetin2Icon.X, 393 + currentMetin2Icon.Y);
+            //return new Point(405 + currentMetin2Icon.X, 393 + currentMetin2Icon.Y);
+            return new Point(403 + currentMetin2Icon.X, 379 + currentMetin2Icon.Y);
         }
 
         public Point PointCharEnterButton()
