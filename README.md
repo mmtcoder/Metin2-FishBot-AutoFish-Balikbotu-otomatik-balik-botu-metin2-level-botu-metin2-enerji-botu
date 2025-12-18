@@ -86,8 +86,7 @@ Bilgisayarınızda aktif kullandığınız başka programlar yok ise sadece 2 Gh
    ### ENERJİ KRİSTALİ BÖLÜMÜ
 
    - Sadece **Kırmızı bayrakta ve hesabın 35 level üstü olup simyacıdan görevi almanız gerekir**
-   - Artı olarak silahcıdaki **Yeni bir koku** görevini alın ama yapmayın yani **Marketi aç** kısmı ikinci yerde kalacak
-   - eğer Telegram aktif ettiyseniz hesabınızda **yer yok veya para bittiyse size mesaj gönderir ve karakter çalışmaz**
+   - Eğer Telegram aktif ettiyseniz hesabınızda **yer yok veya para bittiyse size mesaj gönderir ve karakter çalışmaz**
    - Kendisi silah satıcısından alıp simyacıya gider sürükleyip bittikten sonra bu döngü devam eder
    - Herhangi bir takılma falan olduğunda otomatik ch atar
    
